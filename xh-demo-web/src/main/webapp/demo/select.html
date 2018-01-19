@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select</title>
+</head>
+<body>
+<select id="select1">
+    <option>选项1</option>
+    <!-- 设置默认选中 -->
+    <option selected="selected">选项2</option>
+    <option>选项3</option>
+    <option>选项4</option>
+    <!-- 设置实际的值与显示的值不同的 -->
+    <option value="5">选项5</option>
+</select>
+</body>
+<script>
+    var sel = document.getElementById("select1");
+    sel.onchange = function () {
+        var val = this.value;
+        alert(val);
+    }
+</script>
+</html>

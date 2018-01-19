@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>乱七八糟导航</title>
+    <link type="text/css" rel="stylesheet" href="common.css">
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<div class="top">
+
+</div>
+<div class="search">
+    <form action="#">
+        <select class="b_sky">
+            <option>百度</option>
+            <option>谷歌</option>
+        </select>
+        <input id="inp" class="border_grey" placeholder="输入你要搜索的内容">
+        <input class="btn" type="submit" value="搜索">
+    </form>
+</div>
+<div class="root">
+    <div class="item border_grey">
+        <p class="title"></p>
+        <div class="menu">
+            <img src="rack.png" onclick="edit(this)">
+        </div>
+        <table>
+            <tbody>
+            <tr class="line">
+                <td><a></a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="mask"></div>
+</body>
+</html>

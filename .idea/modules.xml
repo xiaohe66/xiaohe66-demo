@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/xh.iml" filepath="$PROJECT_DIR$/xh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xh-demo-activiti/xh-demo-activiti.iml" filepath="$PROJECT_DIR$/xh-demo-activiti/xh-demo-activiti.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xh-demo-arithmetic/xh-demo-arithmetic.iml" filepath="$PROJECT_DIR$/xh-demo-arithmetic/xh-demo-arithmetic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xh-demo-j2ee/xh-demo-j2ee.iml" filepath="$PROJECT_DIR$/xh-demo-j2ee/xh-demo-j2ee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xh-demo-poi/xh-demo-poi.iml" filepath="$PROJECT_DIR$/xh-demo-poi/xh-demo-poi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xh-demo-se/xh-demo-se.iml" filepath="$PROJECT_DIR$/xh-demo-se/xh-demo-se.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xh-demo-servlet/xh-demo-servlet.iml" filepath="$PROJECT_DIR$/xh-demo-servlet/xh-demo-servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xh-demo-shiro/xh-demo-shiro.iml" filepath="$PROJECT_DIR$/xh-demo-shiro/xh-demo-shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xh-demo-web/xh-demo-web.iml" filepath="$PROJECT_DIR$/xh-demo-web/xh-demo-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xh-demo-wsdl/xh-demo-wsdl.iml" filepath="$PROJECT_DIR$/xh-demo-wsdl/xh-demo-wsdl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xh-util/xh-util.iml" filepath="$PROJECT_DIR$/xh-util/xh-util.iml" />
+    </modules>
+  </component>
+</project>

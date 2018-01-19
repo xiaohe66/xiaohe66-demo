@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="xh-demo-web:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/xh_demo_web.war</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="xh-demo-web" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="xh-demo-web/web/Web" />
+    </root>
+  </artifact>
+</component>

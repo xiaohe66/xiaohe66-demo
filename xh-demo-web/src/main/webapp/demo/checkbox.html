@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkbox</title>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+<label>
+    <!-- 默认选中 -->
+    <input type="checkbox" name="check" value="1" checked="checked">
+    选项1
+</label>
+<label>
+    <!-- 不可更改 -->
+    <input type="checkbox" name="check" value="2" disabled="disabled">
+    选项2
+</label>
+<label>
+    <input type="checkbox" name="check" value="3">
+    选项3
+</label>
+<label>
+    <input type="checkbox" name="check" value="4">
+    选项4
+</label>
+<div>
+    <button onclick="getVal1()">js遍历</button>
+    <button onclick="getVal2()">jquery遍历</button>
+</div>
+</body>
+<script>
+    /**
+     * js遍历
+     */
+    function getVal1() {
+        var checks = document.getElementsByName("check");
+        var val="";
+        for(var i=0;i<checks.length;i++){
+            if(checks[i].checked){
+                val+=checks[i].value+",";
+            }
+        }
+        alert(val);
+    }
+    /**
+     * jQuery遍历
+     */
+    function getVal2() {
+        var val="";
+        $("input[name=check]:checked").each(function(){
+            val += $(this).val()+",";
+        });
+        alert(val);
+    }
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radio</title>
+
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<label>
+    <!-- checked=默认选中,name姓名相同表示一对 -->
+    <input type="radio" name="sex" value="男" checked="checked"/>
+    男
+</label>
+<label>
+    <input type="radio" name="sex" value="女"/>
+    女
+</label>
+<div>
+    <button onclick="getVal1()">js获取值</button>
+    <button onclick="getVal2()">jquery获取值</button>
+</div>
+</body>
+<script>
+    function getVal1() {
+        var inputs = document.getElementsByName("sex");
+        for(var i=0;i<inputs.length;i++){
+            if(inputs[i].checked){
+                alert(inputs[i].value);
+            }
+        }
+
+    }
+    function getVal2() {
+        var val = $("input[name=sex][checked]").val();
+        alert(val);
+    }
+</script>
+</html>

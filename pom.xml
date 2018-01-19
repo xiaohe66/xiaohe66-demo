@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.xiaohe66</groupId>
+    <artifactId>xh</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>xh-demo-servlet</module>
+        <module>xh-demo-se</module>
+        <module>xh-demo-web</module>
+        <module>xh-demo-j2ee</module>
+        <module>xh-util</module>
+        <module>xh-demo-poi</module>
+        <module>xh-demo-shiro</module>
+        <module>xh-demo-activiti</module>
+        <module>xh-demo-wsdl</module>
+        <module>xh-demo-arithmetic</module>
+    </modules>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                    <version>4.12</version>
+                    <scope>test</scope>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.apache.poi</groupId>
+                    <artifactId>poi-ooxml</artifactId>
+                    <version>3.17</version>
+                </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+
+</project>
