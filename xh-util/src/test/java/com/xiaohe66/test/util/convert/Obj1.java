@@ -4,7 +4,7 @@ package com.xiaohe66.test.util.convert;
  * @author xh
  * @date 2018-1-19
  */
-public class Obj1 {
+public class Obj1 extends Obj{
 
     private int integer;
     private String string;
@@ -22,10 +22,19 @@ public class Obj1 {
         this.obj2TypeDifferent = obj2TypeDifferent;
     }
 
+    public int getInteger() {
+        return integer;
+    }
+
+    public void setInteger(int integer) {
+        this.integer = integer;
+    }
+
     @Override
     public String toString() {
         return "Obj1{" +
-                "integer=" + integer +
+                "objI=" + objI +
+                ", integer=" + integer +
                 ", string='" + string + '\'' +
                 ", obj2NotHave='" + obj2NotHave + '\'' +
                 ", obj2TypeDifferent=" + obj2TypeDifferent +

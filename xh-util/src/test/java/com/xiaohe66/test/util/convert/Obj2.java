@@ -13,6 +13,9 @@ public class Obj2 {
 
     private long typeDifferent;
 
+    private Integer objI;
+    private Long objL;
+
     public int getInteger() {
         return integer;
     }
@@ -29,6 +32,14 @@ public class Obj2 {
         return typeDifferent;
     }
 
+    public Integer getObjI() {
+        return objI;
+    }
+
+    public Long getObjL() {
+        return objL;
+    }
+
     @Override
     public String toString() {
         return "Obj2{" +
@@ -36,6 +47,7 @@ public class Obj2 {
                 ", string='" + string + '\'' +
                 ", obj1NotHave='" + obj1NotHave + '\'' +
                 ", typeDifferent=" + typeDifferent +
+                ", objI=" + objI +
                 '}';
     }
 }
