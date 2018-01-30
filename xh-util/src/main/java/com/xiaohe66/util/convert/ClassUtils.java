@@ -39,8 +39,29 @@ public class ClassUtils {
             return null;
         }
 
+        convert(targetObj,sourceObj);
+
+        return targetObj;
+    }
+
+    /**
+     * 不同类的同名同类型属性复制
+     * 把sourceObj实例中的属性值复制到targetObj中，复制的属性必须是同名同类型的
+     * 继承的类也可以复制
+     *
+     * @param targetObj 目标类的实例
+     * @param sourceObj 源类的实例
+     */
+    public static void convert(Object targetObj,Object sourceObj){
         /*
-        * 获取源类的Class，通过反射获取该类所有的字段（不包括超类）
+        * 判断参数是否为null
+        * */
+        if(targetObj == null || sourceObj == null){
+            throw new NullPointerException("targetObj or sourceObj is null");
+        }
+
+        /*
+        * 获取源类的Class
         * */
         Class sourceClass =  sourceObj.getClass();
 
@@ -50,17 +71,27 @@ public class ClassUtils {
         Field[] sourceOperandFields;
 
         /*
-        * 当前操作的类。一开始保存的是源类Class，在循环时，保存的是超类的Class
+        * 当前操作的源Class。一开始保存的是源类Class，在循环时，保存的是源类的超类Class
         * */
         Class sourceOperandCls = sourceClass;
 
         /*
-        * 目标操作中的class
+        * 目标类，当前操作中的Class
         * */
         Class targetOperandCls;
 
-        String fieldName;
+        /*
+        * 当前操作的目标类字段
+        * */
         Field targetOperandField;
+
+        /*
+        * 字段名
+        * */
+        String fieldName;
+        /*
+        * 字段的值
+        * */
         Object val;
 
         //取当前源类，和源的超类
@@ -70,7 +101,7 @@ public class ClassUtils {
 
             for (Field sourceOperandField : sourceOperandFields) {
                 //初始化目标class
-                targetOperandCls = targetCls;
+                targetOperandCls = targetObj.getClass();
 
                 //获取源成员名称
                 fieldName = sourceOperandField.getName();
@@ -100,7 +131,7 @@ public class ClassUtils {
                 }
 
                 try {
-                    //将accessible的值设置为true后，会取消java的访问检查，即可访问私有属性
+                    //将accessible的值设置为true后，会取消java的访问检查，即可访问私有(private)属性
                     sourceOperandField.setAccessible(true);
                     val = sourceOperandField.get(sourceObj);
 
@@ -114,6 +145,5 @@ public class ClassUtils {
             }
             sourceOperandCls = sourceOperandCls.getSuperclass();
         }
-        return targetObj;
     }
 }
