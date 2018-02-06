@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器列表</title>
+</head>
+<body>
+<table class="dataintable">
+    <tbody>
+    <tr>
+        <th>选择器</th>
+        <th>实例</th>
+        <th>选取</th>
+    </tr>
+
+    <tr>
+        <td>*</td>
+        <td>$("*")</td>
+        <td>所有元素</td>
+    </tr>
+
+    <tr>
+        <td>#<i>id</i></td>
+        <td>$("#lastname")</td>
+        <td>id="lastname" 的元素</td>
+    </tr>
+
+    <tr>
+        <td>.<i>class</i></td>
+        <td>$(".intro")</td>
+        <td>所有 class="intro" 的元素</td>
+    </tr>
+
+    <tr>
+        <td><i>element</i></td>
+        <td>$("p")</td>
+        <td>所有 &lt;p&gt; 元素</td>
+    </tr>
+
+    <tr>
+        <td>.<i>class</i>.<i>class</i></td>
+        <td>$(".intro.demo")</td>
+        <td>所有 class="intro" 且 class="demo" 的元素</td>
+    </tr>
+
+    <tr>
+        <td style="background-color:#fff;">&nbsp;</td>
+        <td style="background-color:#fff;">&nbsp;</td>
+        <td style="background-color:#fff;">&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td>:first</td>
+        <td>$("p:first")</td>
+        <td>第一个 &lt;p&gt; 元素</td>
+    </tr>
+
+    <tr>
+        <td>:last</td>
+        <td>$("p:last")</td>
+        <td>最后一个 &lt;p&gt; 元素</td>
+    </tr>
+
+    <tr>
+        <td>:even</td>
+        <td>$("tr:even")</td>
+        <td>所有偶数 &lt;tr&gt; 元素</td>
+    </tr>
+
+    <tr>
+        <td>:odd</td>
+        <td>$("tr:odd")</td>
+        <td>所有奇数 &lt;tr&gt; 元素</td>
+    </tr>
+
+    <tr>
+        <td style="background-color:#fff;">&nbsp;</td>
+        <td style="background-color:#fff;">&nbsp;</td>
+        <td style="background-color:#fff;">&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td>:eq(<i>index</i>)</td>
+        <td>$("ul li:eq(3)")</td>
+        <td>列表中的第四个元素（index 从 0 开始）</td>
+    </tr>
+
+    <tr>
+        <td>:gt(<i>no</i>)</td>
+        <td>$("ul li:gt(3)")</td>
+        <td>列出 index 大于 3 的元素</td>
+    </tr>
+
+    <tr>
+        <td>:lt(<i>no</i>)</td>
+        <td>$("ul li:lt(3)")</td>
+        <td>列出 index 小于 3 的元素</td>
+    </tr>
+
+    <tr>
+        <td>:not(<i>selector</i>)</td>
+        <td>$("input:not(:empty)")</td>
+        <td>所有不为空的 input 元素</td>
+    </tr>
+
+    <tr>
+        <td style="background-color:#fff;">&nbsp;</td>
+        <td style="background-color:#fff;">&nbsp;</td>
+        <td style="background-color:#fff;">&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td>:header</td>
+        <td>$(":header")</td>
+        <td>所有标题元素 &lt;h1&gt; - &lt;h6&gt;</td>
+    </tr>
+
+    <tr>
+        <td>:animated</td>
+        <td>&nbsp;</td>
+        <td>所有动画元素</td>
+    </tr>
+
+    <tr>
+        <td style="background-color:#fff;">&nbsp;</td>
+        <td style="background-color:#fff;">&nbsp;</td>
+        <td style="background-color:#fff;">&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td>:contains(<i>text</i>)</td>
+        <td>$(":contains('W3School')")</td>
+        <td>包含指定字符串的所有元素</td>
+    </tr>
+
+    <tr>
+        <td>:empty</td>
+        <td>$(":empty")</td>
+        <td>无子（元素）节点的所有元素</td>
+    </tr>
+
+    <tr>
+        <td>:hidden</td>
+        <td>$("p:hidden")</td>
+        <td>所有隐藏的 &lt;p&gt; 元素</td>
+    </tr>
+
+    <tr>
+        <td>:visible</td>
+        <td>$("table:visible")</td>
+        <td>所有可见的表格</td>
+    </tr>
+
+    <tr>
+        <td style="background-color:#fff;">&nbsp;</td>
+        <td style="background-color:#fff;">&nbsp;</td>
+        <td style="background-color:#fff;">&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td>s1,s2,s3</td>
+        <td>$("th,td,.intro")</td>
+        <td>所有带有匹配选择的元素</td>
+    </tr>
+
+    <tr>
+        <td style="background-color:#fff;">&nbsp;</td>
+        <td style="background-color:#fff;">&nbsp;</td>
+        <td style="background-color:#fff;">&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td>[<i>attribute</i>]</td>
+        <td>$("[href]")</td>
+        <td>所有带有 href 属性的元素</td>
+    </tr>
+
+    <tr>
+        <td>[<i>attribute</i>=<i>value</i>]
+        </td>
+        <td>$("[href='#']")</td>
+        <td>所有 href 属性的值等于 "#" 的元素</td>
+    </tr>
+
+    <tr>
+        <td>[<i>attribute</i>!=<i>value</i>]</td>
+        <td>$("[href!='#']")</td>
+        <td>所有 href 属性的值不等于 "#" 的元素</td>
+    </tr>
+
+    <tr>
+        <td>[<i>attribute</i>$=<i>value</i>]
+        </td>
+        <td>$("[href$='.jpg']")</td>
+        <td>所有 href 属性的值包含以 ".jpg" 结尾的元素</td>
+    </tr>
+
+    <tr>
+        <td style="background-color:#fff;">&nbsp;</td>
+        <td style="background-color:#fff;">&nbsp;</td>
+        <td style="background-color:#fff;">&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td>:input</td>
+        <td>$(":input")</td>
+        <td>所有 &lt;input&gt; 元素</td>
+    </tr>
+
+    <tr>
+        <td>:text</td>
+        <td>$(":text")</td>
+        <td>所有 type="text" 的 &lt;input&gt; 元素</td>
+    </tr>
+
+    <tr>
+        <td>:password</td>
+        <td>$(":password")</td>
+        <td>所有 type="password" 的 &lt;input&gt; 元素</td>
+    </tr>
+
+    <tr>
+        <td>:radio</td>
+        <td>$(":radio")</td>
+        <td>所有 type="radio" 的 &lt;input&gt; 元素</td>
+    </tr>
+
+    <tr>
+        <td>:checkbox</td>
+        <td>$(":checkbox")</td>
+        <td>所有 type="checkbox" 的 &lt;input&gt; 元素</td>
+    </tr>
+
+    <tr>
+        <td>:submit</td>
+        <td>$(":submit")</td>
+        <td>所有 type="submit" 的 &lt;input&gt; 元素</td>
+    </tr>
+
+    <tr>
+        <td>:reset</td>
+        <td>$(":reset")</td>
+        <td>所有 type="reset" 的 &lt;input&gt; 元素</td>
+    </tr>
+
+    <tr>
+        <td>:button</td>
+        <td>$(":button")</td>
+        <td>所有 type="button" 的 &lt;input&gt; 元素</td>
+    </tr>
+
+    <tr>
+        <td>:image</td>
+        <td>$(":image")</td>
+        <td>所有 type="image" 的 &lt;input&gt; 元素</td>
+    </tr>
+
+    <tr>
+        <td>:file</td>
+        <td>$(":file")</td>
+        <td>所有 type="file" 的 &lt;input&gt; 元素</td>
+    </tr>
+
+    <tr>
+        <td style="background-color:#fff;">&nbsp;</td>
+        <td style="background-color:#fff;">&nbsp;</td>
+        <td style="background-color:#fff;">&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td>:enabled</td>
+        <td>$(":enabled")</td>
+        <td>所有激活的 input 元素</td>
+    </tr>
+
+    <tr>
+        <td>:disabled</td>
+        <td>$(":disabled")</td>
+        <td>所有禁用的 input 元素</td>
+    </tr>
+
+    <tr>
+        <td>:selected</td>
+        <td>$(":selected")</td>
+        <td>所有被选取的 input 元素</td>
+    </tr>
+
+    <tr>
+        <td>:checked</td>
+        <td>$(":checked")</td>
+        <td>所有被选中的 input 元素</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

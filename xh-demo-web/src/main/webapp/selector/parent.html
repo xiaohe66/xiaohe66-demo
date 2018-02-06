@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>祖先选择器</title>
+    <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function(){
+            var div3 = $(".c3");
+
+            /*
+            * parent() 方法返回被选元素的直接父元素。
+            * 该方法只会向上一级对 DOM 树进行遍历。
+            * */
+            var div2 = div3.parent();
+            console.log("--------parent--------");
+            console.log(div2.text());
+
+            /*
+            * parents() 方法返回被选元素的所有祖先元素，
+            * 若不填入参数，则会一路向上直到文档的根元素 (<html>)。
+            * 下面是获取到父级所有的.c1元素
+            * */
+            var divs = div3.parents(".c1");
+            divs.each(function () {
+                console.log("--------parents--------");
+                console.log($(this).text());
+            });
+            /*
+            * parentsUntil() 方法返回介于两个给定元素之间的所有祖先元素。
+            * */
+
+            var div2 = div3.parentsUntil(".c1");
+            console.log("--------parentsUntil--------");
+            console.log(div2.text());
+        });
+    </script>
+</head>
+<body>
+    <div class="c1">
+        c1
+        <div class="c2">
+            c2
+            <div class="c3">c3</div>
+        </div>
+    </div>
+</body>
+</html>

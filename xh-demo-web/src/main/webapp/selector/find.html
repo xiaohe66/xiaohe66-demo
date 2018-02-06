@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后代选择器</title>
+    <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function(){
+            var div1 = $(".c1");
+            /*
+            * children() 方法返回被选元素的所有直接子元素。
+            * 该方法只会向下一级对 DOM 树进行遍历。
+            * 不填参数时，选取全部直接子元素
+            * */
+            console.log("-------children--------");
+            var div2 = div1.children(".c2");
+            console.log(div2.text());
+
+            /*
+            * find() 方法返回被选元素的后代元素。
+            * 一路向下直到最后一个后代。
+            * 不填参数时，选取全部后代元素
+            * */
+            console.log("-------find--------");
+            var divs = div1.find("div");
+            divs.each(function () {
+                console.log($(this).text());
+            })
+        });
+    </script>
+</head>
+<body>
+    <div class="c1">
+        c1
+        <div class="c2">
+            c2
+            <div class="c3">c3</div>
+        </div>
+    </div>
+</body>
+</html>

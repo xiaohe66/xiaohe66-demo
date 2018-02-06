@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onChange事件</title>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+    <script>
+        /* 使用jQuery */
+        $(function(){
+            $("#inp1").change(function(){
+                alert("input输入框的值改变了1");
+            });
+            $("#textarea").change(function(){
+                alert("textarea输入框的值改变了");
+            });
+            $("#select").change(function(){
+                alert("select的值改变了");
+            });
+        });
+
+        /* 使用function，在change时被调用 */
+        function inpChange(){
+            alert("input输入框的值改变了2");
+        }
+    </script>
+</head>
+<body>
+<P>
+    除了select外，其它元素的onChange事件的触发需要2个条件
+    <ol>
+        <li>元素的值被改变</li>
+        <li>元素失去焦点</li>
+    </ol>
+</P>
+<P>因此，使用js修改元素的值，是不能触发onChange事件的</P>
+<p>
+    支持onChange事件的html元素有：
+    <ol>
+        <li>input&nbsp;type="text"</li>
+        <li>select</li>
+        <li>textarea</li>
+    </ol>
+</p>
+<p>
+    支持onChange事件的JavaScript对象有：
+    <ol>
+        <li>fileUpload</li>
+        <li>select</li>
+        <li>text</li>
+        <li>textarea</li>
+    </ol>
+</p>
+    <input placeholder="输入框1" id="inp1">
+    <input placeholder="输入框2"  id="inp2" onchange="inpChange()">
+    <textarea  placeholder="输入框3"  id="textarea"></textarea>
+    <select id="select">
+        <option>选择1</option>
+        <option>选择2</option>
+        <option>选择3</option>
+    </select>
+</body>
+</html>
