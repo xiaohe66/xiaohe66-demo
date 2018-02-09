@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>柱状图</title>
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    <script src="/js/echarts.common.min.js"></script>
+    <script src="/js/echarts.adaptor.js"></script>
+    <script>
+        $(function(){
+             init();
+//            $(".cls").echarts(option);
+        });
+
+        function init(){
+            var option = {
+                title:"标题"
+                ,subtitle:"副标题"
+                //,xAxis:["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋"]
+                ,type:"pie"
+                ,adaptors:{
+                    legend:"说明"
+                    ,name:"item1"
+                    ,value:"val"
+                    ,data:"[{\"item1\":\"衬衫\",\"val\":124}," +
+                        "{\"item1\":\"羊毛衫\",\"val\":235}," +
+                        "{\"item1\":\"雪纺衫\",\"val\":622}," +
+                        "{\"item1\":\"裤子\",\"val\":1337}," +
+                        "{\"item1\":\"高跟鞋\",\"val\":1788}]"
+                }
+            };
+            $("#main").echarts(option);
+        }
+    </script>
+</head>
+<body>
+    <div id="main" style="height: 500px"></div>
+    <div class="cls" style="height: 500px"></div>
+    <div class="cls" style="height: 500px"></div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>柱状图</title>
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    <script src="/js/echarts.common.min.js"></script>
+    <script>
+        $(function(){
+            /*
+            初始化一个图表，该图表没有未设置类似和数据
+            初始化传入一个div的js对象（注意是js对象），当作图表的容器
+            该di需要有自己设置高度和宽度，图表会根据该div的宽高进行自适应
+             */
+            var myChart = echarts.init($("#main")[0]);
+            var option = {
+                /*
+                * title设置图表标题
+                * */
+                title: {
+                    text: 'ECharts 入门示例'
+                },
+                tooltip: {},
+                legend: {
+                    data:['销量','测试']
+                },
+                /*
+                * X轴显示的文本
+                * */
+                xAxis: {
+                    data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+                },
+                /*
+                * Y轴显示的文本
+                * */
+                yAxis: {},
+                /*
+
+                type：设置该图表的类型(bar=条/柱状图，pie=饼图，line=折线图)
+                 */
+                series: [{
+                    name: '销量',
+                    type: 'bar',
+                    data: [5, 20, 36, 10, 11, 20]
+                },
+                {
+                    name: '测试',
+                    type: 'bar',
+                    data: [15, 120, 136, 120, 131, 210]
+                }]
+            };
+            myChart.setOption(option);
+        });
+    </script>
+</head>
+<body>
+    <div id="main" style="height: 500px"></div>
+</body>
+</html>
