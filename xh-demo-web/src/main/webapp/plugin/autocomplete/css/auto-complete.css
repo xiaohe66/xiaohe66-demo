@@ -1,0 +1,14 @@
+
+.auto-complete-ul{
+    position: absolute;
+    border: 1px solid #d1d1d1;
+    background: #fff;
+    display: none;
+    z-index: 99;
+}
+.auto-complete-ul li{
+    cursor: pointer;
+}
+.auto-complete-ul li:hover{
+    background: #45B0E6;
+}
