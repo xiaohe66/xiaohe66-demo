@@ -2,40 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>柱状图</title>
-    <script src="/js/jquery-1.11.3.min.js"></script>
-    <script src="/js/echarts.common.min.js"></script>
-    <script src="/js/echarts.adaptor.js"></script>
-    <script>
-        $(function(){
-             init();
-//            $(".cls").echarts(option);
-        });
+    <title>图表控件</title>
 
-        function init(){
-            var option = {
-                title:"标题"
-                ,subtitle:"副标题"
-                //,xAxis:["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋"]
+    <!-- jquery-1.11.3.min.js是最后一个支持ie8的jquery -->
+    <script src="/plugin/jquery/jquery-1.11.3.min.js"></script>
+    <script src="/plugin/echarts/echarts.common.min.js"></script>
+    <script src="/plugin/echarts/echarts.adaptor.js"></script>
+    <script>
+
+        $(function(){
+            var param = {
+                title:"option标题"
+                ,subtitle:"option副标题"
                 ,type:"pie"
-                ,adaptors:{
-                    legend:"说明"
-                    ,name:"item1"
-                    ,value:"val"
-                    ,data:"[{\"item1\":\"衬衫\",\"val\":124}," +
-                        "{\"item1\":\"羊毛衫\",\"val\":235}," +
-                        "{\"item1\":\"雪纺衫\",\"val\":622}," +
-                        "{\"item1\":\"裤子\",\"val\":1337}," +
-                        "{\"item1\":\"高跟鞋\",\"val\":1788}]"
+                //----------------值的设置主要关注以下参数------------------
+                //xAxis：当图表类型为柱状图或折线图时，会显示为x轴数据
+                ,xAxis:["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋"]
+                //这个参数支持json字符串，可把xAxis换成下面参数再打开本demo
+//                ,xAxis:"[\"衬衫\",\"羊毛衫\",\"雪纺衫\",\"裤子\",\"高跟鞋\"]"
+
+                //item：当图表
+                ,item:["厂家1","厂家2","厂家3"]
+                //这个参数支持json字符串，可把xAxis换成下面参数再打开本demo
+//                ,item:"[\"厂家1\",\"厂家2\",\"厂家3\"]"
+                ,valuesArr:[
+                    /*
+                    * 这里，不想多说什么，看表吧
+                    * -----------------------------------------
+                    * |    | 衬衫 | 羊毛衫 | 雪纺衫 | 裤子 | 高跟鞋|
+                    * -----------------------------------------
+                    * |厂家1| 324 |  135  | 322   |  737 | 388 |
+                    * -----------------------------------------
+                    * |厂家2| 124 |  561  |  267  |  824 | 834 |
+                    * -----------------------------------------
+                    * |厂家2| 224 |  541  |  717  |  822 | 734 |
+                    * -----------------------------------------
+                    * */
+                    [324,135,322,737,388]
+                    ,[124,561,267,824,834]
+                    ,[224,541,717,822,734]
+                ]
+                //---------------值的设置主要关注以上参数------------------
+                //series定义所有图表类型的Series参数
+                ,seriesAdaptor:{
+                    radius:[0,110]
+
+                }
+                //pieSeries定义饼图的专属Series参数
+                ,pieSeries:{
+                    label:{
+//                        formatter: "pieSeries"
+                    }
+                }
+                //barSeries定义柱状图的专属Series参数
+                ,barSeries: {
+                    label:{
+//                        formatter: "barSeries"
+//                        ,position:"inside"
+                    }
+                }
+                ,option:{
+                    /*
+                    这里添加其它属性，格式按官方定义
+                     */
                 }
             };
-            $("#main").echarts(option);
+            //生成图表
+            $("#main").echarts(param);
+        });
+
+        function changeType(type) {
+            $("#main").echartsType(type);
         }
     </script>
 </head>
 <body>
-    <div id="main" style="height: 500px"></div>
-    <div class="cls" style="height: 500px"></div>
-    <div class="cls" style="height: 500px"></div>
+    <div>
+        <button onclick="changeType('bar')">柱状图</button>
+        <button onclick="changeType('pie')">饼图</button>
+        <button onclick="changeType('line')">折线图</button>
+        <a href="http://echarts.baidu.com/examples/" target="_blank">官方实例</a>
+        <a href="http://echarts.baidu.com/api.html#echarts" target="_blank">官方文档</a>
+        <a href="http://echarts.baidu.com/option.html" target="_blank">配置项说明</a>
+    </div>
+    <div class="main" id="main" style="height: 500px"></div>
 </body>
 </html>
