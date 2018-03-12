@@ -59,11 +59,13 @@
         adaptor.type = param.type;
         setIfNull(adaptor,"radius",[0, 200]);
 
+        var item = jsonObj(param.item);
+
         var s = 100/seriesData.length;
         $.each(seriesData,function (i,data) {
             var obj = copyObj(param[param.type+"Series"],copyObj(adaptor,{}));
             series.push(obj);
-            obj.name = param.item[i];
+            obj.name = item[i];
             obj.data = data;
             obj.center = [s*i+s*0.5+"%","50%"];
         });
@@ -123,7 +125,7 @@
             var option = getOption(param);
 
             var xAxis = getObj(option,"xAxis");
-            xAxis.data = param.xAxis;
+            xAxis.data = jsonObj(param.xAxis);
 
             getObj(option,"yAxis");
 
