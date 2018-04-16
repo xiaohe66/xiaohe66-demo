@@ -29,3 +29,10 @@ function copyObj(source,target) {
     }
     return result;
 }
+
+function base64Encode(str) {
+    return btoa(str);
+}
+function base64Decode(str){
+    return atob(str);
+}
