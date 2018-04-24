@@ -20,6 +20,7 @@
         <module>xh-demo-activiti</module>
         <module>xh-demo-wsdl</module>
         <module>xh-demo-arithmetic</module>
+        <module>xh-demo-webcollector</module>
     </modules>
 
 
