@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="changReturnValMain" class="com.xiaohe66.demo.spring.aop.changretval.test.ChangReturnValMain"/>
+    <bean id="changReturnValueAsp" class="com.xiaohe66.demo.spring.aop.changretval.test.ChangReturnValueAsp"/>
+
+    <aop:config>
+        <aop:aspect id="myListener" ref="changReturnValueAsp">
+            <aop:pointcut id="listenerCut" expression="execution(* com.xiaohe66.demo.spring.aop.changretval.test.ChangReturnValMain.doTask(..))"/>
+            <aop:around method="change" pointcut-ref="listenerCut"/>
+        </aop:aspect>
+    </aop:config>
+
+    <aop:config>
+        <aop:aspect id="myListener" ref="changReturnValueAsp">
+            <aop:pointcut id="listenerCut2" expression="execution(* com.xiaohe66.demo.spring.aop.changretval.test.ChangReturnValMain.doTask2(..))"/>
+            <aop:around method="change2" pointcut-ref="listenerCut2"/>
+        </aop:aspect>
+    </aop:config>
+
+</beans>
