@@ -5,26 +5,26 @@
     <title>图表控件</title>
 
     <!-- jquery-1.11.3.min.js是最后一个支持ie8的jquery -->
-    <script src="/plugin/jquery/jquery-1.11.3.min.js"></script>
-    <script src="/plugin/echarts/echarts.common.min.js"></script>
-    <script src="/plugin/echarts/echarts.adaptor-2.0.js"></script>
+    <script src="../jquery/jquery-1.11.3.min.js"></script>
+    <script src="echarts.min.js"></script>
+    <script src="echarts.adaptor-2.0.js"></script>
     <script>
-
         $(function(){
             var param = {
                 title:"option标题"
                 ,subtitle:"option副标题"
-                ,type:"pie"
+                ,type:"radar"
                 //----------------值的设置主要关注以下参数------------------
                 //xAxis：当图表类型为柱状图或折线图时，会显示为x轴数据
-                ,xAxis:["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋"]
+//                ,xAxis:["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋"]
                 //这个参数支持json字符串，可把xAxis换成下面参数再打开本demo
-//                ,xAxis:"[\"衬衫\",\"羊毛衫\",\"雪纺衫\",\"裤子\",\"高跟鞋\"]"
+                ,xAxis:"[\"衬衫\",\"羊毛衫\",\"雪纺衫\",\"裤子\",\"高跟鞋\"]"
 
                 //item：当图表
-                ,item:["厂家1","厂家2","厂家3"]
+//                ,item:["厂家1","厂家2","厂家3"]
                 //这个参数支持json字符串，可把xAxis换成下面参数再打开本demo
 //                ,item:"[\"厂家1\",\"厂家2\",\"厂家3\"]"
+                ,item:"[\"厂家1\",\"厂家2\"]"
                 ,valuesArr:[
                     /*
                     * 这里，不想多说什么，看表吧
@@ -40,16 +40,17 @@
                     * */
                     [324,135,322,737,388]
                     ,[124,561,267,824,834]
-                    ,[224,541,717,822,734]
+//                    ,[224,541,717,822,734]
                 ]
+//                ,radarMax:[424,678,894,1100,900]
                 //---------------值的设置主要关注以上参数------------------
                 //series定义所有图表类型的Series参数
                 ,seriesAdaptor:{
-                    radius:[0,110]
 
                 }
                 //pieSeries定义饼图的专属Series参数
                 ,pieSeries:{
+                    radius:[0,110],
                     label:{
 //                        formatter: "pieSeries"
                     }
@@ -61,10 +62,12 @@
 //                        ,position:"inside"
                     }
                 }
-                ,option:{
+                ,optionAdaptor:{
                     /*
                     这里添加其它属性，格式按官方定义
                      */
+                },radarOption :{
+
                 }
             };
             //生成图表
@@ -81,10 +84,10 @@
         <button onclick="changeType('bar')">柱状图</button>
         <button onclick="changeType('pie')">饼图</button>
         <button onclick="changeType('line')">折线图</button>
+        <button onclick="changeType('radar')">雷达图</button>
         <a href="http://echarts.baidu.com/examples/" target="_blank">官方实例</a>
         <a href="http://echarts.baidu.com/api.html#echarts" target="_blank">官方文档</a>
         <a href="http://echarts.baidu.com/option.html" target="_blank">配置项说明</a>
     </div>
-    <div class="main" id="main" style="height: 500px"></div>
 </body>
 </html>

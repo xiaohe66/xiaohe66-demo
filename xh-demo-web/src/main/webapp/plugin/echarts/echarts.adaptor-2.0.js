@@ -1,7 +1,6 @@
 /**
  * 图表控件
  *
- * todo:仅支持了三种类型的图表，需要以附加参数的形式兼容其它图表
  * @author xh
  * @date 18-01-25 025
  *
@@ -41,33 +40,38 @@
         return result;
     };
 
+    var getSeries = function (param) {
+        var series = getObj(param,param.type+"Series");
+        return copyObj(getObj(param,"seriesAdaptor"),series);
+    };
+
     var getOption = function (param) {
-        var option = param["option_"+param.type];
-        if(option === un){
-            option = copyObj(getObj(param,"option"),{});
-            param["option_"+param.type] = option;
-        }
-        return option;
+        var option = getObj(param,param.type+"Option");
+        return copyObj(getObj(param,"optionAdaptor"),option);
     };
 
     var setDefault = function ($this,seriesData) {
         var param = $this.echartParam;
         var option = getOption(param);
-        var adaptor = param.seriesAdaptor;
-        var series = option.series = [];
 
-        adaptor.type = param.type;
-        setIfNull(adaptor,"radius",[0, 200]);
+        var series = getSeries(param);
+
+        var seriesArr = option.series = [];
+
+        series.type = param.type;
+        setIfNull(series,"radius",[0, 200]);
 
         var item = jsonObj(param.item);
 
         var s = 100/seriesData.length;
         $.each(seriesData,function (i,data) {
-            var obj = copyObj(param[param.type+"Series"],copyObj(adaptor,{}));
-            series.push(obj);
-            obj.name = item[i];
+            var obj = copyObj(series);
+            seriesArr.push(obj);
+            if(param.type !== "radar"){
+                obj.name = item[i];
+                obj.center = [s*i+s*0.5+"%","50%"];
+            }
             obj.data = data;
-            obj.center = [s*i+s*0.5+"%","50%"];
         });
 
         var title = getObj(option,"title");
@@ -141,7 +145,7 @@
             var legend = getObj(option,"legend");
 
             setIfNull(legend,"data",jsonObj(param.item));
-            setIfNull(legend,"y","right");
+            setIfNull(legend,"y","center");
             setIfNull(legend,"type","scroll");
             setIfNull(legend,"orient","vertical");
             setIfNull(legend,"right",10);
@@ -152,6 +156,59 @@
         },
         line : function ($this) {
             this.bar($this);
+        },
+        radar : function ($this) {
+            var param = $this.echartParam;
+            var option = getOption(param);
+
+            var x = jsonObj(param.xAxis);
+            var item = jsonObj(param.item);
+
+            getObj(option,"tooltip");
+
+            var max = param.radarMax;
+            if(max === un){
+                max = [];
+                $.each(jsonObj(param.valuesArr),function (i, data) {
+                    $.each(data,function (j,item) {
+                        if(max[j] === un || max[j] < item){
+                            max[j] = item*1.1;
+                        }
+                    });
+                });
+            }
+
+            var indicator = [];
+            $.each(x,function (i,value) {
+                indicator.push({
+                    name:value,
+                    max:max[i]
+                });
+            });
+            var radar = getObj(option,"radar");
+            setIfNull(radar,"indicator",indicator);
+
+            var dataItem = [];
+            var valuesArr = jsonObj(param.valuesArr);
+            $.each(valuesArr,function(i,values){
+                dataItem.push({
+                    name:item[i],
+                    value:values
+                });
+            });
+
+            var data = [];
+            data.push(dataItem);
+
+            var radarSeries = getObj(param,"radarSeries");
+            // getObj(getObj(radarSeries,"areaStyle"),"normal");
+            setIfNull(radarSeries,"radius",[]);
+
+            var legend = getObj(option,"legend");
+            setIfNull(legend,"data",jsonObj(param.item));
+            setIfNull(getObj(option,"title"),"x","left");
+
+            setDefault($this,data);
         }
     };
 
@@ -172,12 +229,6 @@
             return;
         }
         param.type = type;
-
-        var option = param["option_"+type];
-        if(option !== un){
-            getEchartsObj($this).setOption(option);
-        }else{
-            create[type]($this);
-        }
+        create[type]($this);
     };
 })(jQuery);
