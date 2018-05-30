@@ -4,7 +4,7 @@
  * @author xh
  * @date 18-01-25 025
  *
- * @version 2.0  18-03-12
+ * @version 2.1  18-04-12
  */
 (function($){
 
