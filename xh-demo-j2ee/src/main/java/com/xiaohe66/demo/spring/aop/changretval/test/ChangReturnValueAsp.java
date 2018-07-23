@@ -60,4 +60,28 @@ public class ChangReturnValueAsp {
         return map;
     }
 
+    /**
+     * 异常通知修改返回值
+     *
+     * @param proceedingJoinPoint {@link ProceedingJoinPoint}
+     * @return  modify return value.
+     * @throws Throwable if have exception
+     */
+    public Object afterThrowing(ProceedingJoinPoint proceedingJoinPoint) throws Throwable{
+        Object retVal;
+        String methodName = proceedingJoinPoint.getSignature().getName();
+        try{
+            retVal = proceedingJoinPoint.proceed();
+        }catch (Exception e){
+            retVal = e.getMessage();
+        }
+        System.out.println("The method " + methodName);
+
+        //改变返回值
+        Map<String,Object> map = new HashMap<>(16);
+        map.put("status",1);
+        map.put("val",retVal);
+        return map;
+    }
+
 }

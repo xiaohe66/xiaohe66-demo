@@ -33,4 +33,9 @@ public class ChangReturnValTest {
         System.out.println("最终值="+changReturnValMain.doTask2("value"));
     }
 
+    @Test
+    public void test3(){
+        System.out.println("最终值="+changReturnValMain.doTask3());
+    }
+
 }

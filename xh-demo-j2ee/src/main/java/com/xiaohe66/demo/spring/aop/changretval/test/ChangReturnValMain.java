@@ -21,4 +21,8 @@ public class ChangReturnValMain {
         return val;
     }
 
+    public Object doTask3(){
+        throw new NullPointerException("hello");
+    }
+
 }

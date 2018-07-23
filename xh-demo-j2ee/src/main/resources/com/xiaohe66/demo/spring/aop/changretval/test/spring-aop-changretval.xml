@@ -20,4 +20,11 @@
         </aop:aspect>
     </aop:config>
 
+    <aop:config>
+        <aop:aspect id="myListener" ref="changReturnValueAsp">
+            <aop:pointcut id="listenerCut3" expression="execution(* com.xiaohe66.demo.spring.aop.changretval.test.ChangReturnValMain.doTask3(..))"/>
+            <aop:around method="afterThrowing" pointcut-ref="listenerCut3"/>
+        </aop:aspect>
+    </aop:config>
+
 </beans>
