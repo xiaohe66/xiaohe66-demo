@@ -21,6 +21,7 @@
         <module>xh-demo-wsdl</module>
         <module>xh-demo-arithmetic</module>
         <module>xh-demo-webcollector</module>
+        <module>xh-redis</module>
     </modules>
 
     <properties>
@@ -109,6 +110,14 @@
             </dependency>
             <!--servlet/jsp api end-->
 
+
+            <!-- redis start -->
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>3.0.0</version>
+            </dependency>
+            <!-- redis end -->
 
         </dependencies>
     </dependencyManagement>
