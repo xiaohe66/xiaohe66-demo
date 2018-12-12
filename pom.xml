@@ -22,6 +22,7 @@
         <module>xh-demo-arithmetic</module>
         <module>xh-demo-webcollector</module>
         <module>xh-redis</module>
+        <module>xh-demo-boot</module>
     </modules>
 
     <properties>
