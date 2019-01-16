@@ -21,6 +21,7 @@
         <module>xh-demo-wsdl</module>
         <module>xh-demo-arithmetic</module>
         <module>xh-demo-webcollector</module>
+        <module>xh-demo-reactor</module>
     </modules>
 
     <properties>
@@ -68,6 +69,12 @@
                 <version>${spring.version}</version>
             </dependency>
             <!-- spring end -->
+
+            <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor-core</artifactId>
+                <version>3.2.5.RELEASE</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
