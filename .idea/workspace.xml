@@ -3,27 +3,30 @@
   <component name="AnalysisUIOptions">
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="xh-demo-servlet:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="785f0bce-3591-4ec3-a238-899addb27025" name="Default" comment="">
+    <list default="true" id="785f0bce-3591-4ec3-a238-899addb27025" name="Default" comment="servlet">
+      <change afterPath="$PROJECT_DIR$/xh-demo-guava/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/base/PreconditionsDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/cache/CacheDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/cache/CacheDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/cache/CacheUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/ratelimit/RateLimiterDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xh-demo-guava/src/test/java/com/xiaohe66/demo/test/guava/base/PreconditionsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xh-demo-guava/xh-demo-guava.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xh-demo-webcollector/xh-demo-webcollector.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-demo-webcollector/xh-demo-webcollector.iml" afterDir="false" />
     </list>
     <list id="e4224671-b286-41ab-a0b8-5fb49f628ce8" name="idea" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-demo-activiti/xh-demo-activiti.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-demo-activiti/xh-demo-activiti.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-demo-arithmetic/xh-demo-arithmetic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-demo-arithmetic/xh-demo-arithmetic.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-demo-j2ee/xh-demo-j2ee.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-demo-j2ee/xh-demo-j2ee.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-demo-poi/xh-demo-poi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-demo-poi/xh-demo-poi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-demo-se/xh-demo-se.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-demo-se/xh-demo-se.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-demo-servlet/xh-demo-servlet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-demo-servlet/xh-demo-servlet.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-demo-shiro/xh-demo-shiro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-demo-shiro/xh-demo-shiro.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-demo-web/xh-demo-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-demo-web/xh-demo-web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-demo-webcollector/xh-demo-webcollector.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-demo-wsdl/xh-demo-wsdl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-demo-wsdl/xh-demo-wsdl.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-util/xh-util.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-util/xh-util.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,6 +53,11 @@
     <ignored path="$PROJECT_DIR$/xh-demo-arithmetic/target/" />
     <ignored path="$PROJECT_DIR$/xh-demo-webcollector/target/" />
     <ignored path="$PROJECT_DIR$/xh-demo-reactor/target/" />
+    <ignored path=".idea/" />
+    <ignored path="ruiwei" />
+    <ignored path="ruiwei.pub" />
+    <ignored path="sh.exe.stackdump" />
+    <ignored path="$PROJECT_DIR$/xh-demo-guava/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,46 +80,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xh-demo-web/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
+            <state relative-caret-position="106">
+              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="39" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xh-demo-reactor/pom.xml">
+        <entry file="file://$PROJECT_DIR$/xh-demo-guava/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="416">
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xh-demo-reactor/src/test/java/com/xiaohe66/demo/reactor/ReactorTest.java">
+        <entry file="file://$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/ratelimit/RateLimiterDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xh-demo-reactor/src/test/java/com/xiaohe66/demo/reactor/mono/MonoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+            <state relative-caret-position="323">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,12 +110,73 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xh-demo-web/src/main/webapp/main/index.js">
+        <entry file="file://$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/cache/CacheDemo2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1444">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="335">
+              <caret line="69" column="29" lean-forward="true" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
               <folding>
-                <element signature="e#0#40#0" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/base/PreconditionsDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/xh-demo-guava/src/test/java/com/xiaohe66/demo/test/guava/base/PreconditionsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://E:/develop/jdk/1.8/src.zip!/java/util/Objects.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+              <folding>
+                <element signature="e#1410#1411#0" expanded="true" />
+                <element signature="e#1471#1472#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.0.1-jre/guava-27.0.1-jre-sources.jar!/com/google/common/base/Preconditions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="1370" column="20" selection-start-line="1370" selection-start-column="20" selection-end-line="1370" selection-end-column="20" />
+              <folding>
+                <element signature="e#46440#46441#0" expanded="true" />
+                <element signature="e#46496#46497#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/cache/CacheUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#739#740#0" expanded="true" />
+                <element signature="e#798#799#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,10 +189,10 @@
       <list>
         <option value="Singleton" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -156,6 +207,10 @@
       <find>xg</find>
       <find>xh</find>
       <find>百度</find>
+      <find>servlet</find>
+      <find>AtomicBoolean</find>
+      <find>error</find>
+      <find>test</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -168,23 +223,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xh-demo-se/src/main/java/com/xh/demo/se/thread/Runleable.java" />
-        <option value="$PROJECT_DIR$/xh-demo-se/src/main/java/com/xh/demo/se/thread/RunnableDemo.java" />
-        <option value="$PROJECT_DIR$/xh-demo-se/src/main/java/com/xh/demo/se/thread/sync/Count.java" />
-        <option value="$PROJECT_DIR$/xh-demo-se/src/main/java/com/xh/demo/se/thread/sync/Obj.java" />
-        <option value="$PROJECT_DIR$/xh-demo-se/src/main/java/com/xh/demo/se/thread/ThreadStartDemo.java" />
-        <option value="$PROJECT_DIR$/xh-demo-se/src/main/java/com/xh/demo/se/thread/ThreadStateDemo.java" />
-        <option value="$PROJECT_DIR$/xh-demo-se/src/main/java/com/xh/demo/se/thread/create/ThreadDemo.java" />
-        <option value="$PROJECT_DIR$/xh-demo-se/src/main/java/com/xh/demo/se/thread/state/ThreadStateDemo.java" />
-        <option value="$PROJECT_DIR$/xh-demo-se/src/main/java/com/xh/demo/se/thread/sync/SyncDemo1.java" />
-        <option value="$PROJECT_DIR$/xh-demo-se/src/main/java/com/xh/demo/se/thread/sync/SyncDemo.java" />
-        <option value="$PROJECT_DIR$/xh-demo-arithmetic/src/bihu/Demo2.java" />
-        <option value="$PROJECT_DIR$/xh-demo-arithmetic/src/bihu/Demo5.java" />
-        <option value="$PROJECT_DIR$/xh-demo-web/src/main/webapp/demo/checkbox.html" />
-        <option value="$PROJECT_DIR$/xh-demo-web/src/main/webapp/demo/select.html" />
-        <option value="$PROJECT_DIR$/xh-demo-se/src/main/java/com/xh/demo/se/thread/common/ThreadCommon.java" />
-        <option value="$PROJECT_DIR$/xh-demo-se/src/main/java/com/xh/demo/se/io/IoCommon.java" />
-        <option value="$PROJECT_DIR$/xh-demo-se/src/main/java/com/xh/demo/se/io/FileCopy.java" />
         <option value="$PROJECT_DIR$/xh-demo-arithmetic/src/bihu/Demo1.java" />
         <option value="$PROJECT_DIR$/xh-demo-servlet/src/main/webapp/forword/main.jsp" />
         <option value="$PROJECT_DIR$/xh-demo-servlet/src/main/webapp/forword/target.jsp" />
@@ -201,7 +239,6 @@
         <option value="$PROJECT_DIR$/xh-demo-se/pom.xml" />
         <option value="$PROJECT_DIR$/xh-demo-wsdl/pom.xml" />
         <option value="$PROJECT_DIR$/xh-demo-poi/pom.xml" />
-        <option value="$PROJECT_DIR$/xh-demo-servlet/pom.xml" />
         <option value="$PROJECT_DIR$/xh-demo-shiro/pom.xml" />
         <option value="$PROJECT_DIR$/xh-demo-web/pom.xml" />
         <option value="$PROJECT_DIR$/xh-demo-j2ee/pom.xml" />
@@ -215,20 +252,30 @@
         <option value="$PROJECT_DIR$/xh-demo-web/src/main/webapp/main/index.html" />
         <option value="$PROJECT_DIR$/xh-demo-web/src/main/webapp/main/index.css" />
         <option value="$PROJECT_DIR$/xh-util/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/xh-demo-reactor/pom.xml" />
-        <option value="$PROJECT_DIR$/xh-demo-reactor/src/test/java/com/xiaohe66/demo/reactor/ReactorTest.java" />
         <option value="$PROJECT_DIR$/xh-demo-reactor/src/test/java/com/xiaohe66/demo/reactor/mono/MonoTest.java" />
+        <option value="$PROJECT_DIR$/xh-demo-reactor/src/test/java/com/xiaohe66/demo/reactor/ReactorTest.java" />
+        <option value="$PROJECT_DIR$/xh-demo-se/src/main/java/com/xiaohe66/demo/se/base/Precision.java" />
+        <option value="$PROJECT_DIR$/xh-demo-se/src/main/java/com/xiaohe66/demo/se/base/FloatingNumber.java" />
+        <option value="$PROJECT_DIR$/xh-demo-se/src/main/java/com/xiaohe66/demo/se/string/StringDemo.java" />
+        <option value="$PROJECT_DIR$/xh-demo-se/src/main/java/com/xiaohe66/demo/se/thread/pool/ThreadPoolDemo.java" />
+        <option value="$PROJECT_DIR$/xh-demo-servlet/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/xh-demo-servlet/pom.xml" />
+        <option value="$PROJECT_DIR$/xh-demo-servlet/src/main/java/com/xiaohe66/demo/servlet/TestServlet.java" />
+        <option value="$PROJECT_DIR$/xh-demo-servlet/src/main/java/com/xiaohe66/demo/servlet/PrintHeaderServlet.java" />
+        <option value="$PROJECT_DIR$/xh-demo-servlet/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/ratelimit/RateLimiterDemo.java" />
+        <option value="$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/cache/CacheDemo.java" />
+        <option value="$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/cache/CacheDemo1.java" />
+        <option value="$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/cache/CacheUtils.java" />
+        <option value="$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/cache/CacheDemo2.java" />
+        <option value="$PROJECT_DIR$/xh-demo-guava/pom.xml" />
+        <option value="$PROJECT_DIR$/xh-demo-guava/src/test/java/test.java" />
+        <option value="$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/base/PreconditionsDemo.java" />
+        <option value="$PROJECT_DIR$/xh-demo-guava/src/test/java/com/xiaohe66/demo/test/guava/base/PreconditionsTest.java" />
       </list>
     </option>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/pom.xml">
-      <ranges>
-        <range start1="23" end1="23" start2="23" end2="24" changelist="e4224671-b286-41ab-a0b8-5fb49f628ce8" />
-        <range start1="70" end1="70" start2="71" end2="77" changelist="785f0bce-3591-4ec3-a238-899addb27025" />
-      </ranges>
-    </file>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -412,7 +459,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -423,59 +469,75 @@
             <path>
               <item name="xh-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="xh-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="xh-demo-reactor" type="462c0819:PsiDirectoryNode" />
+              <item name="xh-demo-guava" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xh-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="xh-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="xh-demo-reactor" type="462c0819:PsiDirectoryNode" />
+              <item name="xh-demo-guava" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xh-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="xh-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="xh-demo-reactor" type="462c0819:PsiDirectoryNode" />
+              <item name="xh-demo-guava" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xh-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="xh-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="xh-demo-reactor" type="462c0819:PsiDirectoryNode" />
+              <item name="xh-demo-guava" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xh-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xh-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="xh-demo-reactor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xh-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="xh-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="xh-demo-reactor" type="462c0819:PsiDirectoryNode" />
+              <item name="xh-demo-guava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guava" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xh-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xh-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="xh-demo-guava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guava" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xh-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xh-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="xh-demo-guava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guava" type="462c0819:PsiDirectoryNode" />
+              <item name="ratelimit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xh-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xh-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="xh-demo-guava" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="reactor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xh-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="xh-demo" type="462c0819:PsiDirectoryNode" />
               <item name="xh-demo-se" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="xh-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xh-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="xh-demo-webcollector" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -484,26 +546,17 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547606312924" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551145906331" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="SonarLintApp" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\workspaces\xh\xh-web\src\main" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.xh.demo.se.common" />
-      <recent name="com.xh.demo.se.http" />
-      <recent name="com.xh.demo.se.jdbc" />
-      <recent name="com.xh.demo.se.designpattern.singleinstance" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\workspace\xh-demo\xh-demo-reactor\src\test\java\com\xiaohe66\demo\reactor" />
@@ -511,6 +564,15 @@
       <recent name="F:\workspaces\xh\xh-demo-se\src\main\java\com\xh\demo\se\designpattern" />
       <recent name="F:\workspaces\xh\xh-demo-se\src\main\java\com\xh\demo\se" />
       <recent name="F:\workspaces\xh\xh-demo-web\src\main\webapp\js" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xh.demo.se.common" />
+      <recent name="com.xh.demo.se.http" />
+      <recent name="com.xh.demo.se.jdbc" />
+      <recent name="com.xh.demo.se.designpattern.singleinstance" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\workspaces\xh\xh-web\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -525,7 +587,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MonoTest">
+  <component name="RunManager" selected="JUnit.PreconditionsTest.test7">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -600,83 +662,83 @@
       <setting name="depsClasspath" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="MonoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="xh-demo-reactor" />
+    <configuration name="PreconditionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xh-demo-guava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xiaohe66.demo.reactor.mono.*" />
+          <option name="PATTERN" value="com.xiaohe66.demo.test.guava.base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.xiaohe66.demo.reactor.mono" />
-      <option name="MAIN_CLASS_NAME" value="com.xiaohe66.demo.reactor.mono.MonoTest" />
+      <option name="PACKAGE_NAME" value="com.xiaohe66.demo.test.guava.base" />
+      <option name="MAIN_CLASS_NAME" value="com.xiaohe66.demo.test.guava.base.PreconditionsTest" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MonoTest.test1 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="xh-demo-reactor" />
+    <configuration name="PreconditionsTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xh-demo-guava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xiaohe66.demo.reactor.mono.*" />
+          <option name="PATTERN" value="com.xiaohe66.demo.test.guava.base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.xiaohe66.demo.reactor.mono" />
-      <option name="MAIN_CLASS_NAME" value="com.xiaohe66.demo.reactor.mono.MonoTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MonoTest.test1 (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="xh-demo-reactor" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xiaohe66.demo.reactor.mono.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.xiaohe66.demo.reactor.mono" />
-      <option name="MAIN_CLASS_NAME" value="com.xiaohe66.demo.reactor.mono.MonoTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MonoTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="xh-demo-reactor" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xiaohe66.demo.reactor.mono.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.xiaohe66.demo.reactor.mono" />
-      <option name="MAIN_CLASS_NAME" value="com.xiaohe66.demo.reactor.mono.MonoTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MonoTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="xh-demo-reactor" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xiaohe66.demo.reactor.mono.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.xiaohe66.demo.reactor.mono" />
-      <option name="MAIN_CLASS_NAME" value="com.xiaohe66.demo.reactor.mono.MonoTest" />
+      <option name="PACKAGE_NAME" value="com.xiaohe66.demo.test.guava.base" />
+      <option name="MAIN_CLASS_NAME" value="com.xiaohe66.demo.test.guava.base.PreconditionsTest" />
       <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PreconditionsTest.test41" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xh-demo-guava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiaohe66.demo.test.guava.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xiaohe66.demo.test.guava.base" />
+      <option name="MAIN_CLASS_NAME" value="com.xiaohe66.demo.test.guava.base.PreconditionsTest" />
+      <option name="METHOD_NAME" value="test41" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PreconditionsTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xh-demo-guava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiaohe66.demo.test.guava.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xiaohe66.demo.test.guava.base" />
+      <option name="MAIN_CLASS_NAME" value="com.xiaohe66.demo.test.guava.base.PreconditionsTest" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PreconditionsTest.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xh-demo-guava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiaohe66.demo.test.guava.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xiaohe66.demo.test.guava.base" />
+      <option name="MAIN_CLASS_NAME" value="com.xiaohe66.demo.test.guava.base.PreconditionsTest" />
+      <option name="METHOD_NAME" value="test7" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -685,19 +747,6 @@
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="xh" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -819,6 +868,79 @@
         </option>
       </method>
     </configuration>
+    <configuration name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.31" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
+      <deployment>
+        <artifact name="xh-demo-servlet:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_xh-demo" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="65521" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="xh-demo-servlet:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -838,20 +960,21 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Tomcat Server.tomcat" />
       <item itemvalue="Tomcat Server.tomcat-web" />
-      <item itemvalue="JUnit.MonoTest.test1" />
-      <item itemvalue="JUnit.MonoTest.test1 (1)" />
-      <item itemvalue="JUnit.MonoTest.test1 (2)" />
-      <item itemvalue="JUnit.MonoTest.test2" />
-      <item itemvalue="JUnit.MonoTest" />
+      <item itemvalue="JUnit.PreconditionsTest.test2" />
+      <item itemvalue="JUnit.PreconditionsTest" />
+      <item itemvalue="JUnit.PreconditionsTest.test5" />
+      <item itemvalue="JUnit.PreconditionsTest.test41" />
+      <item itemvalue="JUnit.PreconditionsTest.test7" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MonoTest" />
-        <item itemvalue="JUnit.MonoTest.test2" />
-        <item itemvalue="JUnit.MonoTest.test1" />
-        <item itemvalue="JUnit.MonoTest.test1 (2)" />
-        <item itemvalue="JUnit.MonoTest.test1 (1)" />
+        <item itemvalue="JUnit.PreconditionsTest.test7" />
+        <item itemvalue="JUnit.PreconditionsTest" />
+        <item itemvalue="JUnit.PreconditionsTest.test41" />
+        <item itemvalue="JUnit.PreconditionsTest.test5" />
+        <item itemvalue="JUnit.PreconditionsTest.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -920,7 +1043,17 @@
       <workItem from="1516154466340" duration="738000" />
       <workItem from="1516180001812" duration="106000" />
       <workItem from="1516180216133" duration="478000" />
-      <workItem from="1547544158868" duration="4342000" />
+      <workItem from="1547544158868" duration="5735000" />
+      <workItem from="1547689695216" duration="29000" />
+      <workItem from="1549938050110" duration="4511000" />
+      <workItem from="1550023638748" duration="2887000" />
+      <workItem from="1550026850136" duration="183000" />
+      <workItem from="1550045887770" duration="6000" />
+      <workItem from="1550204900367" duration="9347000" />
+      <workItem from="1550733200130" duration="8269000" />
+      <workItem from="1550800347863" duration="11539000" />
+      <workItem from="1551061359127" duration="17000" />
+      <workItem from="1551063094382" duration="17777000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1516180443095</created>
@@ -929,43 +1062,71 @@
       <option name="project" value="LOCAL" />
       <updated>1516180443095</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="idea config file">
+      <created>1547606299610</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1547606299610</updated>
+    </task>
+    <task id="LOCAL-00003" summary="idea config file and reactor">
+      <created>1547606369391</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1547606369391</updated>
+    </task>
+    <task id="LOCAL-00004" summary="浮点数运算，精度问题">
+      <created>1550026397354</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1550026397354</updated>
+    </task>
+    <task id="LOCAL-00005" summary="servlet">
+      <created>1550829714238</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1550829714238</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MonoTest_test1 - 2019.01.15 at 17h 56m 14s.xml">
-      <configuration name="MonoTest.test1" configurationId="JUnit" />
+    <history-entry file="PreconditionsTest_test7 - 2019.02.25 at 17h 33m 31s.xml">
+      <configuration name="PreconditionsTest.test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MonoTest_test1_(1) - 2019.01.15 at 17h 56m 56s.xml">
-      <configuration name="MonoTest.test1 (1)" configurationId="JUnit" />
+    <history-entry file="PreconditionsTest_test7 - 2019.02.25 at 17h 33m 48s.xml">
+      <configuration name="PreconditionsTest.test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MonoTest_test1_(2) - 2019.01.15 at 17h 57m 06s.xml">
-      <configuration name="MonoTest.test1 (2)" configurationId="JUnit" />
+    <history-entry file="PreconditionsTest_test7 - 2019.02.25 at 17h 34m 19s.xml">
+      <configuration name="PreconditionsTest.test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MonoTest_test1 - 2019.01.15 at 18h 04m 22s.xml">
-      <configuration name="MonoTest.test1" configurationId="JUnit" />
+    <history-entry file="PreconditionsTest_test7 - 2019.02.25 at 17h 34m 27s.xml">
+      <configuration name="PreconditionsTest.test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MonoTest_test1 - 2019.01.15 at 18h 06m 28s.xml">
-      <configuration name="MonoTest.test1" configurationId="JUnit" />
+    <history-entry file="PreconditionsTest_test7 - 2019.02.25 at 17h 36m 10s.xml">
+      <configuration name="PreconditionsTest.test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MonoTest_test1 - 2019.01.15 at 18h 07m 09s.xml">
-      <configuration name="MonoTest.test1" configurationId="JUnit" />
+    <history-entry file="PreconditionsTest_test7 - 2019.02.25 at 17h 36m 23s.xml">
+      <configuration name="PreconditionsTest.test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MonoTest_test2 - 2019.01.15 at 18h 09m 26s.xml">
-      <configuration name="MonoTest.test2" configurationId="JUnit" />
+    <history-entry file="PreconditionsTest_test7 - 2019.02.25 at 17h 36m 46s.xml">
+      <configuration name="PreconditionsTest.test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MonoTest_test1 - 2019.01.15 at 18h 10m 04s.xml">
-      <configuration name="MonoTest.test1" configurationId="JUnit" />
+    <history-entry file="PreconditionsTest_test7 - 2019.02.25 at 17h 36m 57s.xml">
+      <configuration name="PreconditionsTest.test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MonoTest_test2 - 2019.01.15 at 18h 10m 08s.xml">
-      <configuration name="MonoTest.test2" configurationId="JUnit" />
+    <history-entry file="PreconditionsTest_test7 - 2019.02.25 at 17h 37m 16s.xml">
+      <configuration name="PreconditionsTest.test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MonoTest - 2019.01.16 at 10h 34m 00s.xml">
-      <configuration name="MonoTest" configurationId="JUnit" />
+    <history-entry file="PreconditionsTest_test7 - 2019.02.25 at 17h 37m 50s.xml">
+      <configuration name="PreconditionsTest.test7" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205855000" />
+    <option name="totallyTimeSpent" value="261813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -978,26 +1139,25 @@
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.18113773" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.1986028" />
       <window_info id="Structure" order="8" weight="0.25249502" />
-      <window_info anchor="bottom" id="SonarLint" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32569557" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41549295" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39839035" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3249497" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34406438" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.499501" weight="0.4668008" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.500499" side_tool="true" weight="0.4668008" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.24949698" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.45171025" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32890365" />
       <window_info anchor="bottom" id="Spring" order="11" />
-      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32890365" />
+      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.3279678" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32569557" />
-      <window_info anchor="right" id="Maven" weight="0.32984033" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="SonarLint" order="15" />
+      <window_info anchor="bottom" id="Database Changes" order="16" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
@@ -1006,8 +1166,9 @@
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Commander" order="7" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" visible="true" weight="0.249501" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.249501" />
       <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="10" weight="0.32984033" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1017,204 +1178,17 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="初始化" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化" />
+    <MESSAGE value="idea config file" />
+    <MESSAGE value="idea config file and reactor" />
+    <MESSAGE value="浮点数运算，精度问题" />
+    <MESSAGE value="servlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="servlet" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xh-demo-web/src/main/webapp/demo/radio.html" />
-    <entry file="file://$PROJECT_DIR$/xh-demo-web/src/main/webapp/demo/input.html" />
-    <entry file="file://$PROJECT_DIR$/xh-demo-web/src/main/webapp/demo/checkbox.html" />
-    <entry file="file://$PROJECT_DIR$/xh-demo-web/src/main/webapp/demo/select.html" />
-    <entry file="file://$PROJECT_DIR$/xh-demo-se/src/main/java/com/xiaohe66/demo/se/thread/create/RunnableDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-se/src/main/java/com/xiaohe66/demo/se/thread/state/ThreadStateDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-se/src/main/java/com/xiaohe66/demo/se/thread/common/ThreadCommon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-se/src/main/java/com/xiaohe66/demo/se/net/http/HttpConn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="860">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-arithmetic/src/main/java/bihu/Demo1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-se/src/main/java/com/xiaohe66/demo/se/io/FileCopy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.3/servlet-api-2.3.jar!/javax/servlet/http/HttpServletRequest.class" />
-    <entry file="file://$PROJECT_DIR$/out/artifacts/xh_demo_servlet_war_exploded/forward/main.jsp" />
-    <entry file="file://$PROJECT_DIR$/out/artifacts/xh_demo_servlet_war_exploded/forward/target.jsp" />
-    <entry file="file://$PROJECT_DIR$/xh-demo-servlet/src/main/webapp/object/config.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-servlet/src/main/webapp/yu/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-servlet/src/main/webapp/yu/target.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-servlet/src/main/webapp/object/exception.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-servlet/src/main/webapp/object/response.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-servlet/src/main/webapp/forward/target.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-servlet/src/main/webapp/forward/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-se/src/main/java/com/xiaohe66/demo/se/io/IoCommon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-se/src/main/java/com/xiaohe66/demo/se/oop/CodeBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-arithmetic/xh-demo-arithmetic.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-web/src/main/webapp/main/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-web/src/main/webapp/main/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1160">
-          <caret line="58" column="11" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-web/src/main/webapp/main/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-wsdl/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-util/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-shiro/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-servlet/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-poi/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-j2ee/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-arithmetic/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xh-demo-activiti/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1226,52 +1200,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-web/src/main/webapp/main/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1444">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <element signature="e#0#40#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-se/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-reactor/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1296,13 +1224,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xh-demo-reactor/src/test/java/com/xiaohe66/demo/reactor/ReactorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.4/commons-lang-2.4.jar!/org/apache/commons/lang/NotImplementedException.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1324,13 +1245,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/develop/jdk/1.8/src.zip!/java/lang/UnsupportedOperationException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="37" column="42" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/develop/jdk/1.8/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1207">
@@ -1344,10 +1258,323 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://E:/develop/jdk/1.8/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="54" column="37" lean-forward="true" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-reactor/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-se/src/main/java/com/xiaohe66/demo/se/base/Operator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-web/src/main/webapp/main/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1444">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="e#0#40#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/develop/jdk/1.8/src.zip!/java/math/BigInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="4475" column="52" selection-start-line="4475" selection-start-column="52" selection-end-line="4475" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/develop/jdk/1.8/src.zip!/java/math/BigDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="240" column="66" selection-start-line="240" selection-start-column="66" selection-end-line="240" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-se/src/main/java/com/xiaohe66/demo/se/thread/sync/SyncDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-se/src/main/java/com/xiaohe66/demo/se/thread/create/RunnableDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-se/src/main/java/com/xiaohe66/demo/se/thread/create/ThreadDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-se/src/main/java/com/xiaohe66/demo/se/base/FloatingNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/xh-demo-reactor/src/test/java/com/xiaohe66/demo/reactor/mono/MonoTest.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/develop/jdk/1.8/src.zip!/java/util/concurrent/Executors.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
-          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+          <caret line="69" column="3" selection-start-line="69" selection-start-column="3" selection-end-line="69" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/develop/jdk/1.8/src.zip!/java/util/concurrent/ExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/develop/jdk/1.8/src.zip!/java/util/concurrent/Executor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="98" column="12" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/develop/jdk/1.8/src.zip!/java/lang/UnsupportedOperationException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="33" column="2" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-servlet/src/main/webapp/index.jsp" />
+    <entry file="file://$PROJECT_DIR$/xh-demo-servlet/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-reactor/src/test/java/com/xiaohe66/demo/reactor/ReactorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2299">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-servlet/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-servlet/src/main/java/com/xiaohe66/demo/servlet/PrintHeaderServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-se/src/main/java/com/xiaohe66/demo/se/thread/pool/ThreadPoolDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-se/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.0.1-jre/guava-27.0.1-jre.jar!/com/google/common/util/concurrent/RateLimiter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="103" column="60" lean-forward="true" selection-start-line="103" selection-start-column="60" selection-end-line="103" selection-end-column="60" />
+          <folding>
+            <element signature="e#3809#3810#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.0.1-jre/guava-27.0.1-jre-sources.jar!/com/google/common/util/concurrent/RateLimiter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="95" column="22" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
+          <folding>
+            <element signature="e#13915#13916#0" expanded="true" />
+            <element signature="e#13960#13961#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruiwei">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruiwei.pub">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sh.exe.stackdump">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="38">
+            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.0.1-jre/guava-27.0.1-jre-sources.jar!/com/google/common/cache/Cache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/cache/CacheDemo1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/ratelimit/RateLimiterDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/cache/CacheUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="39" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-guava/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-guava/src/test/java/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/cache/CacheDemo2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="69" column="29" lean-forward="true" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-guava/src/main/java/com/xiaohe66/demo/guava/base/PreconditionsDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.0.1-jre/guava-27.0.1-jre-sources.jar!/com/google/common/base/Preconditions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="1370" column="20" selection-start-line="1370" selection-start-column="20" selection-end-line="1370" selection-end-column="20" />
+          <folding>
+            <element signature="e#46440#46441#0" expanded="true" />
+            <element signature="e#46496#46497#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/develop/jdk/1.8/src.zip!/java/util/Objects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+          <folding>
+            <element signature="e#1410#1411#0" expanded="true" />
+            <element signature="e#1471#1472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/develop/jdk/1.8/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="79" column="24" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xh-demo-guava/src/test/java/com/xiaohe66/demo/test/guava/base/PreconditionsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1419,7 +1646,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>xh-demo-servlet</last-edited>
+          <last-edited>xh-demo-guava</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

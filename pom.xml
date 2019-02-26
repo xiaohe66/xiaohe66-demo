@@ -22,6 +22,7 @@
         <module>xh-demo-arithmetic</module>
         <module>xh-demo-webcollector</module>
         <module>xh-demo-reactor</module>
+        <module>xh-demo-guava</module>
     </modules>
 
     <properties>
@@ -82,6 +83,28 @@
                 <version>4.0.1</version>
                 <scope>provided</scope>
             </dependency>
+
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>27.0.1-jre</version>
+            </dependency>
+
+            <!-- log start -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.25</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>1.7.25</version>
+            </dependency>
+
+            <!-- log end -->
 
         </dependencies>
     </dependencyManagement>
