@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/xh.iml" filepath="$PROJECT_DIR$/xh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xh-demo.iml" filepath="$PROJECT_DIR$/xh-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/xh-demo-activiti/xh-demo-activiti.iml" filepath="$PROJECT_DIR$/xh-demo-activiti/xh-demo-activiti.iml" />
       <module fileurl="file://$PROJECT_DIR$/xh-demo-arithmetic/xh-demo-arithmetic.iml" filepath="$PROJECT_DIR$/xh-demo-arithmetic/xh-demo-arithmetic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xh-demo-boot/xh-demo-boot.iml" filepath="$PROJECT_DIR$/xh-demo-boot/xh-demo-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xh-demo-guava/xh-demo-guava.iml" filepath="$PROJECT_DIR$/xh-demo-guava/xh-demo-guava.iml" />
       <module fileurl="file://$PROJECT_DIR$/xh-demo-j2ee/xh-demo-j2ee.iml" filepath="$PROJECT_DIR$/xh-demo-j2ee/xh-demo-j2ee.iml" />
       <module fileurl="file://$PROJECT_DIR$/xh-demo-poi/xh-demo-poi.iml" filepath="$PROJECT_DIR$/xh-demo-poi/xh-demo-poi.iml" />
       <module fileurl="file://$PROJECT_DIR$/xh-demo-reactor/xh-demo-reactor.iml" filepath="$PROJECT_DIR$/xh-demo-reactor/xh-demo-reactor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xh-demo-redis/xh-demo-redis.iml" filepath="$PROJECT_DIR$/xh-demo-redis/xh-demo-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/xh-demo-se/xh-demo-se.iml" filepath="$PROJECT_DIR$/xh-demo-se/xh-demo-se.iml" />
       <module fileurl="file://$PROJECT_DIR$/xh-demo-servlet/xh-demo-servlet.iml" filepath="$PROJECT_DIR$/xh-demo-servlet/xh-demo-servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/xh-demo-shiro/xh-demo-shiro.iml" filepath="$PROJECT_DIR$/xh-demo-shiro/xh-demo-shiro.iml" />
