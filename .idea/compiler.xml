@@ -12,10 +12,12 @@
         <module name="xh-demo-arithmetic2" />
         <module name="xh-demo-j2ee" />
         <module name="xh-demo-poi" />
+        <module name="xh-demo-reactor" />
         <module name="xh-demo-se" />
         <module name="xh-demo-servlet" />
         <module name="xh-demo-shiro" />
         <module name="xh-demo-web" />
+        <module name="xh-demo-webcollector" />
         <module name="xh-demo-wsdl" />
         <module name="xh-j2ee" />
         <module name="xh-module" />
@@ -35,18 +37,20 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="xh" target="1.5" />
-      <module name="xh-demo-activiti" target="1.5" />
-      <module name="xh-demo-arithmetic" target="1.5" />
+      <module name="xh" target="1.8" />
+      <module name="xh-demo-activiti" target="1.8" />
+      <module name="xh-demo-arithmetic" target="1.8" />
       <module name="xh-demo-arithmetic2" target="1.5" />
-      <module name="xh-demo-j2ee" target="1.5" />
-      <module name="xh-demo-poi" target="1.5" />
-      <module name="xh-demo-se" target="1.5" />
-      <module name="xh-demo-servlet" target="1.5" />
-      <module name="xh-demo-shiro" target="1.5" />
-      <module name="xh-demo-web" target="1.5" />
-      <module name="xh-demo-wsdl" target="1.5" />
-      <module name="xh-util" target="1.5" />
+      <module name="xh-demo-j2ee" target="1.8" />
+      <module name="xh-demo-poi" target="1.8" />
+      <module name="xh-demo-reactor" target="1.8" />
+      <module name="xh-demo-se" target="1.8" />
+      <module name="xh-demo-servlet" target="1.8" />
+      <module name="xh-demo-shiro" target="1.8" />
+      <module name="xh-demo-web" target="1.8" />
+      <module name="xh-demo-webcollector" target="1.8" />
+      <module name="xh-demo-wsdl" target="1.8" />
+      <module name="xh-util" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
