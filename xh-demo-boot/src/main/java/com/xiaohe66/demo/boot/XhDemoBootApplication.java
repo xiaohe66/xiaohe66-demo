@@ -2,8 +2,6 @@ package com.xiaohe66.demo.boot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import tk.mybatis.spring.annotation.MapperScan;
 
@@ -16,7 +14,7 @@ import tk.mybatis.spring.annotation.MapperScan;
  * @author xh
  */
 @MapperScan(basePackages = "com.xiaohe66.demo.boot.mapper")
-@ComponentScan(basePackages= {"com.xiaohe66.demo.boot"})
+//@ComponentScan(basePackages= {"com.xiaohe66.demo.boot"})
 @EnableScheduling
 //@EnableAsync
 @SpringBootApplication
@@ -25,4 +23,5 @@ public class XhDemoBootApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(XhDemoBootApplication.class, args);
 	}
+
 }

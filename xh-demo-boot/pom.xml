@@ -23,6 +23,13 @@
 
 	<dependencies>
 
+        <!-- webjars ，将静态web框架通过jar包的方式加载 -->
+		<dependency>
+		    <groupId>org.webjars</groupId>
+		    <artifactId>jquery</artifactId>
+		    <version>3.3.1-2</version>
+		</dependency>
+
         <!-- 引入 spring aop 依赖 -->
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
@@ -113,6 +120,8 @@
 	</dependencies>
 
 	<build>
+        <!-- 包名 -->
+        <finalName>xh-demo-boot</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
