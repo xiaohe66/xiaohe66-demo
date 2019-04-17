@@ -1,8 +1,9 @@
 package com.xiaohe66.demo.boot.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -12,15 +13,22 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RedisController {
 
-    @Autowired
-    private StringRedisTemplate stringRedisTemplate;
+    private RedisTemplate<Object,Object> redisTemplate;
 
-    @GetMapping("/redis/test")
-    public String test(){
+    public RedisController(RedisTemplate<Object,Object> redisTemplate) {
+        this.redisTemplate = redisTemplate;
+    }
 
-        stringRedisTemplate.opsForValue().set("name","小何");
+    @GetMapping("/redis/{key}/{val}")
+    public String test(@PathVariable("key")String key,@PathVariable("val")String val){
 
-        return stringRedisTemplate.opsForValue().get("name");
+        System.out.println("key:"+key+",val:"+val);
+
+        ValueOperations<Object,Object> operations = redisTemplate.opsForValue();
+
+        operations.set(key,val);
+
+        return String.valueOf(operations.get(key));
 
     }
 
