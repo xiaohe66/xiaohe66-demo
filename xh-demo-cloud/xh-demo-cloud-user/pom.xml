@@ -8,22 +8,12 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>xh-demo-cloud-order-8100</artifactId>
+    <artifactId>xh-demo-cloud-user</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>xh-demo-cloud-order-8100</name>
+    <name>xh-demo-cloud-user</name>
 	<packaging>jar</packaging>
 
     <dependencies>
-
-        <dependency>
-            <groupId>com.xiaohe66.demo</groupId>
-            <artifactId>xh-demo-cloud-api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.xiaohe66.demo</groupId>
-            <artifactId>xh-demo-cloud-user</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -41,20 +31,16 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
+        <!--<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>-->
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
         </dependency>
 
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

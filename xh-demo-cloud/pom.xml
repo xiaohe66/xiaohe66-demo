@@ -18,19 +18,35 @@
 	<packaging>pom</packaging>
 
     <modules>
+        <module>xh-demo-cloud-api</module>
         <module>xh-demo-cloud-server-9000</module>
         <module>xh-demo-cloud-server-9001</module>
+        <module>xh-demo-cloud-user</module>
         <module>xh-demo-cloud-user-8000</module>
         <module>xh-demo-cloud-user-8001</module>
+        <module>xh-demo-cloud-user-8002</module>
         <module>xh-demo-cloud-order-8100</module>
     </modules>
 
     <properties>
         <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
+        <xiaohe66.demo.cloud.version>0.0.1-SNAPSHOT</xiaohe66.demo.cloud.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>com.xiaohe66.demo</groupId>
+                <artifactId>xh-demo-cloud-api</artifactId>
+                <version>${xiaohe66.demo.cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.xiaohe66.demo</groupId>
+                <artifactId>xh-demo-cloud-user</artifactId>
+                <version>${xiaohe66.demo.cloud.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
