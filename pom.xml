@@ -25,6 +25,7 @@
         <module>xh-demo-boot</module>
         <module>xh-demo-reactor</module>
         <module>xh-demo-guava</module>
+        <module>xh-demo-interview</module>
     </modules>
 
     <properties>
