@@ -26,6 +26,7 @@
         <module>xh-demo-reactor</module>
         <module>xh-demo-guava</module>
         <module>xh-demo-interview</module>
+        <module>xh-demo-mybatis</module>
     </modules>
 
     <properties>
