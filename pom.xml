@@ -27,6 +27,7 @@
         <module>xh-demo-guava</module>
         <module>xh-demo-interview</module>
         <module>xh-demo-mybatis</module>
+        <module>xh-demo-cloud</module>
     </modules>
 
     <properties>

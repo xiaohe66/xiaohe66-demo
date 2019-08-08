@@ -7,6 +7,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/xh-demo-dynamicdatasource/xh-demo-mybatis-dynamicdatasource-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/xh-demo-dynamicdatasource/pom.xml" />
       </list>
     </option>
   </component>

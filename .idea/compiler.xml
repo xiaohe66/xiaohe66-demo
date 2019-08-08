@@ -6,13 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dynamic-datasource-spring-boot-starter" />
         <module name="xh-activiti" />
         <module name="xh-demo-activiti" />
         <module name="xh-demo-arithmetic" />
         <module name="xh-demo-arithmetic2" />
         <module name="xh-demo-boot" />
+        <module name="xh-demo-cloud-common" />
+        <module name="xh-demo-cloud-order-8100" />
+        <module name="xh-demo-cloud-server-9000" />
+        <module name="xh-demo-cloud-server-9001" />
+        <module name="xh-demo-cloud-user" />
+        <module name="xh-demo-cloud-user-8000" />
+        <module name="xh-demo-cloud-user-8001" />
+        <module name="xh-demo-cloud-user-8002" />
+        <module name="xh-demo-cloud-zuul" />
         <module name="xh-demo-guava" />
+        <module name="xh-demo-interview" />
         <module name="xh-demo-j2ee" />
+        <module name="xh-demo-mybatis" />
         <module name="xh-demo-poi" />
         <module name="xh-demo-reactor" />
         <module name="xh-demo-redis" />
@@ -40,13 +52,27 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="dynamic-datasource-spring-boot-starter" target="1.8" />
       <module name="xh-demo" target="1.8" />
       <module name="xh-demo-activiti" target="1.8" />
       <module name="xh-demo-arithmetic" target="1.8" />
       <module name="xh-demo-arithmetic2" target="1.5" />
       <module name="xh-demo-boot" target="1.8" />
+      <module name="xh-demo-cloud" target="1.8" />
+      <module name="xh-demo-cloud-common" target="1.8" />
+      <module name="xh-demo-cloud-order-8100" target="1.8" />
+      <module name="xh-demo-cloud-server-9000" target="1.8" />
+      <module name="xh-demo-cloud-server-9001" target="1.8" />
+      <module name="xh-demo-cloud-user" target="1.8" />
+      <module name="xh-demo-cloud-user-8000" target="1.8" />
+      <module name="xh-demo-cloud-user-8001" target="1.8" />
+      <module name="xh-demo-cloud-user-8002" target="1.8" />
+      <module name="xh-demo-cloud-zuul" target="1.8" />
+      <module name="xh-demo-dynamic-datasource" target="1.8" />
       <module name="xh-demo-guava" target="1.8" />
+      <module name="xh-demo-interview" target="1.8" />
       <module name="xh-demo-j2ee" target="1.8" />
+      <module name="xh-demo-mybatis" target="1.8" />
       <module name="xh-demo-poi" target="1.8" />
       <module name="xh-demo-reactor" target="1.8" />
       <module name="xh-demo-redis" target="1.8" />
@@ -61,7 +87,18 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dynamic-datasource-spring-boot-starter" options="-parameters" />
       <module name="xh-demo-boot" options="-parameters" />
+      <module name="xh-demo-cloud-common" options="-parameters" />
+      <module name="xh-demo-cloud-order-8100" options="-parameters" />
+      <module name="xh-demo-cloud-server-9000" options="-parameters" />
+      <module name="xh-demo-cloud-server-9001" options="-parameters" />
+      <module name="xh-demo-cloud-user" options="-parameters" />
+      <module name="xh-demo-cloud-user-8000" options="-parameters" />
+      <module name="xh-demo-cloud-user-8001" options="-parameters" />
+      <module name="xh-demo-cloud-user-8002" options="-parameters" />
+      <module name="xh-demo-cloud-zuul" options="-parameters" />
+      <module name="xh-demo-dynamic-datasource" options="-parameters" />
     </option>
   </component>
 </project>
