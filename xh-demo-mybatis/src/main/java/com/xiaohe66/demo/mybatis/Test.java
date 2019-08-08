@@ -2,6 +2,7 @@ package com.xiaohe66.demo.mybatis;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 import com.xiaohe66.demo.mybatis.mapper.UserMapper;
+import com.xiaohe66.demo.mybatis.model.User;
 import org.apache.ibatis.mapping.Environment;
 import org.apache.ibatis.session.Configuration;
 import org.apache.ibatis.session.SqlSession;
@@ -17,6 +18,18 @@ import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;
 public class Test {
 
     public static void main(String[] args) {
+        System.out.println(true && true || true);
+        System.out.println(true && false || true);
+        System.out.println(false && true || true);
+        System.out.println(false && false || true);
+        System.out.println("----------------------------");
+        System.out.println(true && true || false);
+        System.out.println(false && true || false);
+        System.out.println(true && false || false);
+        System.out.println(false && false || false);
+    }
+
+    public void main1(String[] args) {
 
         String dbUrl = "jdbc:mysql://localhost:3306/xh_demo_mybatis";
         String dbUser = "root";
@@ -37,6 +50,9 @@ public class Test {
             UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
             System.out.println(userMapper.findAll());
         }
+
+
+        User user = new User();
 
     }
 
