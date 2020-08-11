@@ -20,6 +20,16 @@ package com.xiaohe66.demo.arithmetic.leetcode;
  */
 public class T130被围绕的区域 {
 
+    /**
+     * 实现思路
+     * <p>
+     * 1.遍历距阵的四条边，当遍历到当前元素是O时，把该值设置为一个固定值（非O非X），然后进入下一步逻辑
+     * 2.确定当前所在的边，如果是上，则游标向下走一步，如果是左，则向右，如果是右，则向左。
+     * 3.判断这个新的点是否为O，若为O，则设置为第1步的那个固定值，并且以这个新的点为起点，游标分别行走除了当前边的方向（若当前边是上，则除了上，其它3个方向都要走一遍），以这3个新的点为参数，重复第2步，直至没有O为止
+     * 4.遍历整个距阵，把那个固定值改回为O，把所有O改为X
+     * 5.完毕
+     *
+     */
     void solve(char[][] board) {
         if (board.length < 2) {
             return;
@@ -64,9 +74,9 @@ public class T130被围绕的区域 {
 
         for (char[] arr : board) {
             for (int i = 0; i < arr.length; i++) {
-                if(arr[i] == 'c'){
+                if (arr[i] == 'c') {
                     arr[i] = 'O';
-                }else if(arr[i] == 'O'){
+                } else if (arr[i] == 'O') {
                     arr[i] = 'X';
                 }
             }
