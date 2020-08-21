@@ -1,6 +1,6 @@
 package com.xiaohe66.demo.arithmetic.leetcode.tree;
 
-import com.xiaohe66.demo.arithmetic.leetcode.对称二叉树;
+import com.xiaohe66.demo.arithmetic.leetcode.TreeNode;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -12,7 +12,7 @@ public class T110平衡二叉树Test {
     @Test
     public void testIsSymmetric() {
 
-        T110平衡二叉树.TreeNode node = new T110平衡二叉树.TreeNode();
+        TreeNode node = new TreeNode();
 
         assertTrue(demo.isBalanced(node));
         node.left = createNode();
@@ -44,7 +44,7 @@ public class T110平衡二叉树Test {
 
     }
 
-    private T110平衡二叉树.TreeNode createNode(){
-        return new T110平衡二叉树.TreeNode();
+    private TreeNode createNode(){
+        return new TreeNode();
     }
 }

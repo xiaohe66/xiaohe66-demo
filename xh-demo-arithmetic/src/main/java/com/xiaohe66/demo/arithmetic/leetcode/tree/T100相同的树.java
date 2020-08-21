@@ -1,4 +1,6 @@
-package com.xiaohe66.demo.arithmetic.leetcode;
+package com.xiaohe66.demo.arithmetic.leetcode.tree;
+
+import com.xiaohe66.demo.arithmetic.leetcode.TreeNode;
 
 /**
  * 给定两个二叉树，编写一个函数来检验它们是否相同。
@@ -24,7 +26,7 @@ package com.xiaohe66.demo.arithmetic.leetcode;
  * @author xiaohe
  * @time 2020.08.10 11:50
  */
-public class 相同二叉树 {
+public class T100相同的树 {
 
     public boolean isSameTree(TreeNode node1, TreeNode node2) {
 
@@ -32,30 +34,13 @@ public class 相同二叉树 {
             return node2 == null;
         }
 
-        if(node2 == null || node1.val != node2.val){
+        if(node2 == null || node1.getVal() != node2.getVal()){
             return false;
         }
 
-        return isSameTree(node1.left, node2.left) &&
-                isSameTree(node1.right, node2.right);
+        return isSameTree(node1.getLeft(), node2.getLeft()) &&
+                isSameTree(node1.getRight(), node2.getRight());
     }
 
-
-    public class TreeNode {
-
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {}
-
-        TreeNode(int val) { this.val = val; }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 
 }

@@ -1,4 +1,6 @@
-package com.xiaohe66.demo.arithmetic.leetcode;
+package com.xiaohe66.demo.arithmetic.leetcode.tree;
+
+import com.xiaohe66.demo.arithmetic.leetcode.TreeNode;
 
 /**
  * 给定一个二叉树，检查它是否是镜像对称的。
@@ -20,41 +22,30 @@ package com.xiaohe66.demo.arithmetic.leetcode;
  * @author xiaohe
  * @time 2020.08.07 10:57
  */
-public class 对称二叉树 {
+public class T101对称二叉树 {
 
 
-    public boolean isSymmetric(Node node) {
+    public boolean isSymmetric(TreeNode node) {
         if(node == null){
             return true;
         }
-        return isSymmetric(node.left, node.right);
+        return isSymmetric(node.getLeft(), node.getRight());
     }
 
-    private boolean isSymmetric(Node left, Node right) {
+    private boolean isSymmetric(TreeNode left, TreeNode right) {
         if (left == null) {
             return right == null;
         }
         if (right == null) {
             return false;
         }
-        if (left.val != right.val) {
+        if (left.getVal() != right.getVal()) {
             return false;
         }
 
-        return isSymmetric(left.left, right.right) &&
-                isSymmetric(left.right, right.left);
+        return isSymmetric(left.getLeft(), right.getRight()) &&
+                isSymmetric(left.getRight(), right.getLeft());
     }
 
-
-    static class Node {
-
-        int val;
-        Node left;
-        Node right;
-
-        Node(int val) {
-            this.val = val;
-        }
-    }
 
 }

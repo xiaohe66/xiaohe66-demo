@@ -1,17 +1,18 @@
-package com.xiaohe66.demo.arithmetic.leetcode;
+package com.xiaohe66.demo.arithmetic.leetcode.tree;
 
 
+import com.xiaohe66.demo.arithmetic.leetcode.TreeNode;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class 对称二叉树Test {
+public class T101对称二叉树Test {
 
     @Test
     public void testIsSymmetric() {
 
-        对称二叉树.Node node = new 对称二叉树.Node(1);
+        TreeNode node = new TreeNode(1);
 
-        对称二叉树 instance = new 对称二叉树();
+        T101对称二叉树 instance = new T101对称二叉树();
 
         node.left = createNode(2);
         node.right = createNode(2);
@@ -35,7 +36,7 @@ public class 对称二叉树Test {
     }
 
 
-    private 对称二叉树.Node createNode(int val){
-        return new 对称二叉树.Node(val);
+    private TreeNode createNode(int val){
+        return new TreeNode(val);
     }
 }

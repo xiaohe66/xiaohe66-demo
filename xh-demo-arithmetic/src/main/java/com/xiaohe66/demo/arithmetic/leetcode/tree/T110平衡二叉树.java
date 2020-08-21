@@ -1,5 +1,7 @@
 package com.xiaohe66.demo.arithmetic.leetcode.tree;
 
+import com.xiaohe66.demo.arithmetic.leetcode.TreeNode;
+
 /**
  * 给定一个二叉树，判断它是否是高度平衡的二叉树。
  * <p>
@@ -39,11 +41,11 @@ public class T110平衡二叉树 {
             return 0;
         }
 
-        int h1 = height(node.left);
+        int h1 = height(node.getLeft());
         if(h1 == -1){
             return -1;
         }
-        int h2 = height(node.right);
+        int h2 = height(node.getRight());
         if(h2 == -1){
             return -1;
         }
@@ -63,11 +65,6 @@ public class T110平衡二叉树 {
             }
             return h2 + 1;
         }
-    }
-
-    static class TreeNode {
-        TreeNode left;
-        TreeNode right;
     }
 
 }
