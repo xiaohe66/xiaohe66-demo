@@ -21,6 +21,16 @@ public class ListNode {
         this.next = next;
     }
 
+    public ListNode(int... vals) {
+
+        val = vals[0];
+        ListNode node = this;
+        for (int i = 1; i < vals.length; i++) {
+            node.next = new ListNode(vals[i]);
+            node = node.next;
+        }
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
