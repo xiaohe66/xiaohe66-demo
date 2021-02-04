@@ -28,6 +28,7 @@
         <module>xh-demo-interview</module>
         <module>xh-demo-mybatis</module>
         <module>xh-demo-cloud</module>
+        <module>xh-demo-jvm</module>
     </modules>
 
     <properties>
