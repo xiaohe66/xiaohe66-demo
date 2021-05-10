@@ -2,7 +2,9 @@ package com.xiaohe66.demo.arithmetic.leetcode;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 import java.util.Set;
 
 /**
@@ -13,6 +15,39 @@ public class LeetCodeUtils {
 
     private LeetCodeUtils() {
 
+    }
+
+    /**
+     * 作者：Ghimtim
+     * 链接：https://leetcode-cn.com/circle/article/htJ97s/
+     * 来源：力扣（LeetCode）
+     */
+    public static TreeNode arrayToTreeNode(Integer[] array) {
+        if (array.length == 0) {
+            return null;
+        }
+        TreeNode root = new TreeNode(array[0]);
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        boolean isLeft = true;
+        for (int i = 1; i < array.length; i++) {
+            TreeNode node = queue.peek();
+            if (isLeft) {
+                if (array[i] != null) {
+                    node.left = new TreeNode(array[i]);
+                    queue.offer(node.left);
+                }
+                isLeft = false;
+            } else {
+                if (array[i] != null) {
+                    node.right = new TreeNode(array[i]);
+                    queue.offer(node.right);
+                }
+                queue.poll();
+                isLeft = true;
+            }
+        }
+        return root;
     }
 
     public static boolean equalsList(List<?> list1, List<?> list2) {
@@ -41,7 +76,7 @@ public class LeetCodeUtils {
         return set1.equals(set2);
     }
 
-    public static void outArr2(int[][] arr){
+    public static void outArr2(int[][] arr) {
         StringBuilder out = new StringBuilder();
         for (int[] nums : arr) {
             out.append(Arrays.toString(nums));

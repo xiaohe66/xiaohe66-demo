@@ -62,7 +62,9 @@ public class ListNode {
                 stringBuilder.append(',');
             }
             stringBuilder.append(cur.val);
-            cur = cur.next;
+            if(cur != cur.next){
+                cur = cur.next;
+            }
         }
         stringBuilder.append(']');
         return stringBuilder.toString();
