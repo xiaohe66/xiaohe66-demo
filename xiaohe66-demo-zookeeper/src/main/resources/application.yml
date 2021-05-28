@@ -1,0 +1,20 @@
+#------------- logback ---------------------------------
+# 输出格式：
+# %line 行号
+# %M  方法名
+logging:
+  config: classpath:logback-spring.xml
+  pattern:
+    console: '%d{HH:mm:ss.SSS} %highlight[%-5p] [%thread] %cyan(%logger{15}) >>> %msg %n'
+    file: '%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5p] [%thread] %logger{30} >>> %msg %n'
+debug: true
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?characterEncoding=UTF-8&amp;useUnicode=true&amp;autoReconnect=true
+    username: root
+    password: root
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
