@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.6.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.xiaohe66.demo</groupId>
+    <artifactId>xiaohe66-demo-cloud</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+    <modules>
+        <module>xiaohe66-demo-cloud-common</module>
+        <module>xiaohe66-demo-cloud-order-8100</module>
+        <module>xiaohe66-demo-cloud-server-9000</module>
+        <module>xiaohe66-demo-cloud-server-9001</module>
+        <module>xiaohe66-demo-cloud-user</module>
+        <module>xiaohe66-demo-cloud-user-8000</module>
+        <module>xiaohe66-demo-cloud-user-8001</module>
+        <module>xiaohe66-demo-cloud-user-8002</module>
+        <module>xiaohe66-demo-cloud-zuul</module>
+    </modules>
+
+    <properties>
+        <spring-cloud.version>Finchley.SR2</spring-cloud.version>
+        <xiaohe66.demo.cloud.version>0.0.1-SNAPSHOT</xiaohe66.demo.cloud.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>com.xiaohe66.demo</groupId>
+                <artifactId>xiaohe66-demo-cloud-user</artifactId>
+                <version>${xiaohe66.demo.cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.xiaohe66.demo</groupId>
+                <artifactId>xiaohe66-demo-cloud-common</artifactId>
+                <version>${xiaohe66.demo.cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+        </repository>
+    </repositories>
+
+</project>

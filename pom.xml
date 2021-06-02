@@ -10,15 +10,14 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>xh-demo-se</module>
-        <module>xh-demo-j2ee</module>
+        <module>xiaohe66-demo-se</module>
+        <module>xiaohe66-demo-spring</module>
         <module>xiaohe66-demo-arithmetic</module>
-        <module>xh-demo-redis</module>
-        <module>xh-demo-boot</module>
-        <module>xh-demo-mybatis</module>
-        <module>xh-demo-cloud</module>
-        <module>xh-demo-jvm</module>
+        <module>xiaohe66-demo-boot</module>
+        <module>xiaohe66-demo-mybatis</module>
+        <module>xiaohe66-demo-cloud</module>
         <module>xiaohe66-demo-other</module>
+        <module>xiaohe66-demo-zookeeper</module>
     </modules>
 
     <dependencyManagement>

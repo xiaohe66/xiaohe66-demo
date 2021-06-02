@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <artifactId>xh</artifactId>
+        <artifactId>xiaohe66-demo</artifactId>
         <groupId>com.xiaohe66</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
@@ -113,6 +113,14 @@
             </exclusions>
         </dependency>
         <!-- poi end -->
+
+        <!-- redis start -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <!-- redis end -->
 
     </dependencies>
 
