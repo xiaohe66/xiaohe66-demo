@@ -8,6 +8,8 @@ import java.util.List;
  *
  * <p> 打开 VisualVM 中的插件 Visual GC 可以查看GC的过程
  *
+ * // -Xms200M -Xmx200M -XX:+PrintGCDetails -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=C:\\jvm.dump
+ *
  * @author xiaohe
  * @time 2020.06.23 09:58
  */
@@ -19,10 +21,14 @@ public class OOMDemo {
 
         List<OOMDemo> list = new ArrayList<>();
 
+        int i = 0;
         while (true) {
-            list.add(new OOMDemo());
+            OOMDemo demo = new OOMDemo();
+            if(i++ % 20 == 0){
+                list.add(demo);
+            }
             // 调节该处的休眠时间以控制出现OOM的速度
-            Thread.sleep(100);
+            Thread.sleep(1000);
         }
     }
 }
