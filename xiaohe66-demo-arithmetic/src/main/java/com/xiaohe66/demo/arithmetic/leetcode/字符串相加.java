@@ -42,7 +42,7 @@ public class 字符串相加 {
         }
 
         if (nextBit != 0) {
-            ret[0] = (char) (nextBit + '0');
+            ret[0] = '1';
             return new String(ret);
         } else {
             return new String(ret, 1, maxLength);
