@@ -5,35 +5,21 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.xiaohe66</groupId>
-    <artifactId>xh</artifactId>
+    <artifactId>xiaohe66-demo</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>xh-demo-servlet</module>
         <module>xh-demo-se</module>
-        <module>xh-demo-web</module>
         <module>xh-demo-j2ee</module>
-        <module>xh-util</module>
-        <module>xh-demo-poi</module>
-        <module>xh-demo-shiro</module>
-        <module>xh-demo-activiti</module>
-        <module>xh-demo-wsdl</module>
-        <module>xh-demo-arithmetic</module>
-        <module>xh-demo-webcollector</module>
+        <module>xiaohe66-demo-arithmetic</module>
         <module>xh-demo-redis</module>
         <module>xh-demo-boot</module>
-        <module>xh-demo-reactor</module>
-        <module>xh-demo-guava</module>
-        <module>xh-demo-interview</module>
         <module>xh-demo-mybatis</module>
         <module>xh-demo-cloud</module>
         <module>xh-demo-jvm</module>
+        <module>xiaohe66-demo-other</module>
     </modules>
-
-    <properties>
-        <spring.version>4.3.16.RELEASE</spring.version>
-    </properties>
 
     <dependencyManagement>
         <dependencies>
@@ -43,99 +29,6 @@
                 <artifactId>junit</artifactId>
                 <version>4.12</version>
                 <scope>test</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.poi</groupId>
-                <artifactId>poi-ooxml</artifactId>
-                <version>3.17</version>
-            </dependency>
-
-            <!-- spring start -->
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-aop</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-beans</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-context</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-aspects</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-web</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-test</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-webmvc</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <!-- spring end -->
-
-            <!--servlet/jsp api start-->
-            <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>servlet-api</artifactId>
-                <version>2.5</version>
-            </dependency>
-
-            <dependency>
-                <groupId>javax.servlet.jsp</groupId>
-                <artifactId>jsp-api</artifactId>
-                <version>2.1</version>
-                <scope>provided</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>javax.servlet-api</artifactId>
-                <version>3.1.0</version>
-                <!--<scope>provided</scope>-->
-            </dependency>
-            <!--servlet/jsp api end-->
-
-
-            <!-- redis start -->
-            <dependency>
-                <groupId>redis.clients</groupId>
-                <artifactId>jedis</artifactId>
-                <version>3.0.0</version>
-            </dependency>
-            <!-- redis end -->
-
-            <dependency>
-                <groupId>io.projectreactor</groupId>
-                <artifactId>reactor-core</artifactId>
-                <version>3.2.5.RELEASE</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>27.0.1-jre</version>
             </dependency>
 
             <!-- log start -->

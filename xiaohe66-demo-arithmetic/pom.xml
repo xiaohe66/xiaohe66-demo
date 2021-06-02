@@ -9,24 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>xh-demo-redis</artifactId>
+    <artifactId>xiaohe66-demo-arithmetic</artifactId>
 
     <dependencies>
 
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <scope>test</scope>
         </dependency>
-
-        <!-- redis start -->
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-            <version>3.0.0</version>
-        </dependency>
-        <!-- redis end -->
-
     </dependencies>
 
 </project>
