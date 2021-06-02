@@ -33,7 +33,7 @@
 
         <dependency>
             <groupId>com.xiaohe66.demo</groupId>
-            <artifactId>xh-demo-cloud-user</artifactId>
+            <artifactId>xiaohe66-demo-cloud-user</artifactId>
         </dependency>
 
     </dependencies>

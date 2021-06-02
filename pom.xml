@@ -16,8 +16,8 @@
         <module>xiaohe66-demo-boot</module>
         <module>xiaohe66-demo-mybatis</module>
         <module>xiaohe66-demo-cloud</module>
-        <module>xiaohe66-demo-other</module>
         <module>xiaohe66-demo-zookeeper</module>
+        <module>xiaohe66-demo-other</module>
     </modules>
 
     <dependencyManagement>
