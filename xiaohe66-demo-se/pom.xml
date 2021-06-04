@@ -11,5 +11,12 @@
 
     <artifactId>xiaohe66-demo-se</artifactId>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
