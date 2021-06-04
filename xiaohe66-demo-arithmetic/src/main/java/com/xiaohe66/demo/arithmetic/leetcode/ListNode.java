@@ -16,7 +16,7 @@ public class ListNode {
         this.val = val;
     }
 
-    public ListNode(int val, ListNode next) {
+    public ListNode(ListNode next, int val) {
         this.val = val;
         this.next = next;
     }
@@ -29,6 +29,16 @@ public class ListNode {
             node.next = new ListNode(vals[i]);
             node = node.next;
         }
+    }
+
+    public ListNode(ListNode next, int... vals) {
+        val = vals[0];
+        ListNode node = this;
+        for (int i = 1; i < vals.length; i++) {
+            node.next = new ListNode(vals[i]);
+            node = node.next;
+        }
+        node.next = next;
     }
 
     @Override
@@ -62,7 +72,7 @@ public class ListNode {
                 stringBuilder.append(',');
             }
             stringBuilder.append(cur.val);
-            if(cur != cur.next){
+            if (cur != cur.next) {
                 cur = cur.next;
             }
         }
