@@ -18,6 +18,7 @@
         <module>xiaohe66-demo-cloud</module>
         <module>xiaohe66-demo-zookeeper</module>
         <module>xiaohe66-demo-other</module>
+        <module>xiaohe66-demo-mq</module>
     </modules>
 
     <dependencyManagement>

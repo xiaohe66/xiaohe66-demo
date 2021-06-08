@@ -1,0 +1,8 @@
+spring:
+  rabbitmq:
+    host: vm.com
+    port: 5672
+    username: test1
+    password: test1
+    # 名称前面不能加 /，加上后无法连接 mq
+    virtual-host: test_host

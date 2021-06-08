@@ -1,0 +1,8 @@
+
+各种模式说明：
+https://www.rabbitmq.com/getstarted.html
+
+分类：
+Fanout:广播
+Direct(Routing):定向
+Topic :通配符
