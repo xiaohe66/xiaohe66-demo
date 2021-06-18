@@ -13,10 +13,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.time.LocalTime;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:spring/spring-rabbitmq-hello.xml")
-public class SpringHelloTest {
+@ContextConfiguration(locations = "classpath:spring/spring-rabbitmq-pubsub.xml")
+public class SpringPubsubTest {
 
-    private static final Logger log = LoggerFactory.getLogger(SpringHelloTest.class);
+    private static final Logger log = LoggerFactory.getLogger(SpringPubsubTest.class);
 
     @Autowired
     private RabbitTemplate rabbitTemplate;
@@ -24,7 +24,7 @@ public class SpringHelloTest {
     @Test
     public void test1() {
 
-        rabbitTemplate.convertAndSend(Const.SPRING_HELLO_QUEUE_NAME, "Hello rabbitmq, "+ LocalTime.now());
+        rabbitTemplate.convertAndSend(Const.SPRING_FANOUT_EXCHANGE,"", "广播消息, 当前时间： "+ LocalTime.now());
 
         log.info("发送消息完成");
     }

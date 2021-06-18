@@ -13,10 +13,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.time.LocalTime;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:spring/spring-rabbitmq-hello.xml")
-public class SpringHelloTest {
+@ContextConfiguration(locations = "classpath:spring/spring-rabbitmq-routing.xml")
+public class SpringRoutingTest {
 
-    private static final Logger log = LoggerFactory.getLogger(SpringHelloTest.class);
+    private static final Logger log = LoggerFactory.getLogger(SpringRoutingTest.class);
 
     @Autowired
     private RabbitTemplate rabbitTemplate;
@@ -24,7 +24,9 @@ public class SpringHelloTest {
     @Test
     public void test1() {
 
-        rabbitTemplate.convertAndSend(Const.SPRING_HELLO_QUEUE_NAME, "Hello rabbitmq, "+ LocalTime.now());
+        // routingKey 需要和 queue 绑定，当 routingKey 相同时，才会被发送到 queue中
+        // 若不存在任何 queue 与 routingKey 对应，则这条消息会丢失。
+        rabbitTemplate.convertAndSend(Const.SPRING_ROUTING_EXCHANGE, "info", "Hello rabbitmq, routing , " + LocalTime.now());
 
         log.info("发送消息完成");
     }

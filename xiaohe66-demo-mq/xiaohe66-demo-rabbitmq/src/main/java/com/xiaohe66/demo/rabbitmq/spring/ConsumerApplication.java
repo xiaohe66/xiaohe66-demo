@@ -1,11 +1,7 @@
 package com.xiaohe66.demo.rabbitmq.spring;
 
-import com.xiaohe66.demo.rabbitmq.Const;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.amqp.core.Message;
-import org.springframework.amqp.core.MessageProperties;
-import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -22,18 +18,6 @@ public class ConsumerApplication {
 
         SpringApplication.run(ConsumerApplication.class, args);
         log.info("消费者启动完成");
-
     }
 
-    @RabbitListener(queues = Const.SPRING_QUEUE_NAME)
-    public void rabbitMqListener(Message message) {
-
-        if (log.isInfoEnabled()) {
-
-            MessageProperties properties = message.getMessageProperties();
-
-            log.info("监听到第{}条消息 : {}", properties.getDeliveryTag(), new String(message.getBody()));
-        }
-
-    }
 }
