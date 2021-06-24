@@ -83,4 +83,33 @@ public class LeetCodeUtils {
         }
         System.out.println(out);
     }
+
+    public static int[][] stringToArr2(String str) {
+
+        if("[]".equals(str)){
+            return new int[0][0];
+        }
+
+        String[] arr = str.split("\\],\\[");
+
+        String replace = arr[0].replace("[[", "");
+        arr[0] = replace;
+
+        replace = arr[arr.length - 1].replace("]]", "");
+        arr[arr.length - 1] = replace;
+
+        int len = arr[0].split(",").length;
+
+        int[][] ret = new int[arr.length][len];
+        for (int i = 0; i < arr.length; i++) {
+
+            String[] nums = arr[i].split(",");
+
+            for (int j = 0; j < nums.length; j++) {
+                ret[i][j] = Integer.parseInt(nums[j]);
+            }
+        }
+
+        return ret;
+    }
 }
