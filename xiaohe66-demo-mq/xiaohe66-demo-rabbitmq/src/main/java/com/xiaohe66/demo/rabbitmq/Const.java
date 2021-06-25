@@ -26,4 +26,8 @@ public class Const {
     public static final String SPRING_TOPIC_QUEUE_A = "spring_topic_queue_a";
     public static final String SPRING_TOPIC_QUEUE_B = "spring_topic_queue_b";
 
+    public static final String SPRING_RETURN_QUEUE = "spring_return_queue";
+
+    public static final String SPRING_DEAD_QUEUE = "spring_dead_queue";
+
 }

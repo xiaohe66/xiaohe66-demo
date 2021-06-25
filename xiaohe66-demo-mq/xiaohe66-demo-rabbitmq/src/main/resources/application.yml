@@ -6,3 +6,7 @@ spring:
     password: test1
     # 名称前面不能加 /，加上后无法连接 mq
     virtual-host: test_host
+    listener:
+      simple:
+        # 设置 rabbitmq 为手动应答模式
+        acknowledge-mode: manual

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/rabbit
+       http://www.springframework.org/schema/rabbit/spring-rabbit.xsd">
+
+    <!--加载配置文件-->
+    <import resource="spring-rabbitmq-base.xml"/>
+
+    <!--定义持久化队列，不存在则自动创建；不绑定到交换机则绑定到默认交换机
+    默认交换机类型为direct，名字为：""，路由键为队列的名称
+    -->
+    <!--
+        id：bean的名称
+        name：queue的名称
+        auto-declare:自动创建
+        auto-delete:自动删除。 最后一个消费者和该队列断开连接后，自动删除队列
+        durable：是否持久化
+    -->
+    <rabbit:queue id="spring_ttl_queue" name="spring_ttl_queue">
+        <!-- 设置 queue 的参数，参数名可以在 rabbitmq 的后台管理页面中的 queue 创建中找到 -->
+        <rabbit:queue-arguments>
+            <!-- 消息过期时间，单位毫秒 -->
+            <entry key="x-message-ttl" value="10000" value-type="java.lang.Integer"/>
+        </rabbit:queue-arguments>
+    </rabbit:queue>
+
+    <rabbit:direct-exchange name="spring_ttl_exchange">
+        <rabbit:bindings>
+            <rabbit:binding queue="spring_ttl_queue" key="ttl_test"/>
+        </rabbit:bindings>
+    </rabbit:direct-exchange>
+
+</beans>
