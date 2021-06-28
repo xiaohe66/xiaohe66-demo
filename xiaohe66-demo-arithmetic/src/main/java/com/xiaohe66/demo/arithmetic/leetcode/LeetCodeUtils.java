@@ -1,5 +1,11 @@
 package com.xiaohe66.demo.arithmetic.leetcode;
 
+import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang3.ClassPathUtils;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -86,7 +92,7 @@ public class LeetCodeUtils {
 
     public static int[][] stringToArr2(String str) {
 
-        if("[]".equals(str)){
+        if ("[]".equals(str)) {
             return new int[0][0];
         }
 
@@ -98,12 +104,12 @@ public class LeetCodeUtils {
         replace = arr[arr.length - 1].replace("]]", "");
         arr[arr.length - 1] = replace;
 
-        int len = arr[0].split(",").length;
-
-        int[][] ret = new int[arr.length][len];
+        int[][] ret = new int[arr.length][];
         for (int i = 0; i < arr.length; i++) {
 
             String[] nums = arr[i].split(",");
+
+            ret[i] = new int[nums.length];
 
             for (int j = 0; j < nums.length; j++) {
                 ret[i][j] = Integer.parseInt(nums[j]);
@@ -111,5 +117,22 @@ public class LeetCodeUtils {
         }
 
         return ret;
+    }
+
+    public static String readClassPathFile(Class<?> cls, String name) throws IOException {
+
+        Package aPackage = cls.getPackage();
+
+        String fullPath = ClassPathUtils.toFullyQualifiedPath(aPackage, name);
+
+        ClassLoader classLoader = cls.getClassLoader();
+
+        InputStream inputStream = classLoader.getResourceAsStream(fullPath);
+
+        if (inputStream == null) {
+            throw new IOException("文件不存在 : " + name);
+        }
+
+        return IOUtils.toString(inputStream, StandardCharsets.UTF_8);
     }
 }
