@@ -1,5 +1,7 @@
 package com.xiaohe66.demo.arithmetic.leetcode;
 
+import java.util.Objects;
+
 /**
  * @author xiaohe
  * @time 2020.08.21 09:45
@@ -50,14 +52,24 @@ public class TreeNode {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
 
         TreeNode treeNode = (TreeNode) o;
 
-        if (val != treeNode.val) return false;
-        if (left != null ? !left.equals(treeNode.left) : treeNode.left != null) return false;
-        return right != null ? right.equals(treeNode.right) : treeNode.right == null;
+        if (val != treeNode.val) {
+            return false;
+        }
+
+        if (!Objects.equals(left, treeNode.left)) {
+            return false;
+        }
+
+        return Objects.equals(right, treeNode.right);
     }
 
     @Override
@@ -71,20 +83,25 @@ public class TreeNode {
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append('[');
+
         toStringHelper(this, stringBuilder);
-        stringBuilder.deleteCharAt(stringBuilder.length() - 1);
+
+        stringBuilder.setCharAt(0, '[');
         stringBuilder.append(']');
+
         return stringBuilder.toString();
     }
 
+    /**
+     * 前序遍历
+     */
     private void toStringHelper(TreeNode node, StringBuilder stringBuilder) {
         if (node == null) {
             return;
         }
         toStringHelper(node.left, stringBuilder);
-        stringBuilder.append(node.val);
         stringBuilder.append(',');
+        stringBuilder.append(node.val);
         toStringHelper(node.right, stringBuilder);
     }
 }
