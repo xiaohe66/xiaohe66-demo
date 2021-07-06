@@ -2,11 +2,14 @@ package com.xiaohe66.demo.arithmetic.leetcode;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.ClassPathUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -114,6 +117,40 @@ public class LeetCodeUtils {
             for (int j = 0; j < nums.length; j++) {
                 ret[i][j] = Integer.parseInt(nums[j]);
             }
+        }
+
+        return ret;
+    }
+
+    public static List<List<String>> stringToList2(String str) {
+
+        if ("[]".equals(str)) {
+            return Collections.emptyList();
+        }
+
+        String[] arr = str.split("\\],\\[");
+
+        String replace = arr[0].replace("[[", "");
+        arr[0] = replace;
+
+        replace = arr[arr.length - 1].replace("]]", "");
+        arr[arr.length - 1] = replace;
+
+        List<List<String>> ret = new ArrayList<>(arr.length);
+
+        for (String s : arr) {
+
+            String[] nums = s.split(",");
+
+            List<String> list = new ArrayList<>(nums.length);
+            for (String num : nums) {
+
+                list.add(num.trim());
+
+            }
+
+            ret.add(list);
+
         }
 
         return ret;
