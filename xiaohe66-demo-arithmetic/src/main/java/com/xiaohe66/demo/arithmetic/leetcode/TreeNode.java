@@ -99,9 +99,9 @@ public class TreeNode {
         if (node == null) {
             return;
         }
-        toStringHelper(node.left, stringBuilder);
         stringBuilder.append(',');
         stringBuilder.append(node.val);
+        toStringHelper(node.left, stringBuilder);
         toStringHelper(node.right, stringBuilder);
     }
 }
