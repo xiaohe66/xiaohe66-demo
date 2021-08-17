@@ -12,7 +12,7 @@
     <artifactId>xiaohe66-demo-spring</artifactId>
 
     <properties>
-        <spring.version>4.3.16.RELEASE</spring.version>
+        <spring.version>5.3.9</spring.version>
     </properties>
 
     <dependencies>

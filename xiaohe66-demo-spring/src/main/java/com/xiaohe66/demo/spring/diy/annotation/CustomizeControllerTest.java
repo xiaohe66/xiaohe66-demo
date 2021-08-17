@@ -4,10 +4,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.AnnotatedElementUtils;
 import org.springframework.core.annotation.AnnotationUtils;
+import org.springframework.format.support.FormattingConversionService;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.mock.web.MockServletConfig;
 import org.springframework.mock.web.MockServletContext;
+import org.springframework.web.accept.ContentNegotiationManager;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
@@ -17,6 +19,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 import org.springframework.web.servlet.mvc.condition.RequestCondition;
 import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
+import org.springframework.web.servlet.resource.ResourceUrlProvider;
 
 import javax.servlet.ServletException;
 import java.io.IOException;
@@ -85,11 +88,11 @@ public class CustomizeControllerTest {
     public static class MyWebMvcConfigurationSupport extends WebMvcConfigurationSupport {
 
         @Bean
-        @Override
+        //@Override
         public RequestMappingHandlerMapping requestMappingHandlerMapping() {
             MyRequestMappingHandlerMapping handlerMapping = new MyRequestMappingHandlerMapping();
             handlerMapping.setOrder(0);
-            handlerMapping.setInterceptors(getInterceptors());
+            handlerMapping.setInterceptors(getInterceptors(null,null));
             handlerMapping.setContentNegotiationManager(mvcContentNegotiationManager());
             handlerMapping.setCorsConfigurations(getCorsConfigurations());
 
