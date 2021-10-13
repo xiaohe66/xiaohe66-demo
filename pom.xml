@@ -19,6 +19,7 @@
         <module>xiaohe66-demo-zookeeper</module>
         <module>xiaohe66-demo-other</module>
         <module>xiaohe66-demo-mq</module>
+        <module>xiaohe66-demo-module</module>
     </modules>
 
     <dependencyManagement>
