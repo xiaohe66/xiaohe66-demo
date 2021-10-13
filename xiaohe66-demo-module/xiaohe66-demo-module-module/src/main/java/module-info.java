@@ -9,4 +9,9 @@ module xiaohe.demo.module.module {
      */
     exports com.xiaohe66.demo.module;
 
+    /*
+     * 编译时需要，但是运行时不需要。就可以标记为 static
+     */
+    requires static lombok;
+
 }
