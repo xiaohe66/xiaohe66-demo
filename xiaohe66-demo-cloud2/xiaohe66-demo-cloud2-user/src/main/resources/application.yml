@@ -1,0 +1,44 @@
+debug: true
+#-------------------------------------------
+server:
+  tomcat:
+    # 配置Tomcat编码,默认为UTF-8
+    uri-encoding: UTF-8
+  port: 8091
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: service-user
+  cloud:
+    loadbalancer:
+      ribbon:
+        # 是否开启 Ribbon，()
+        enable: false
+    nacos:
+      discovery:
+        # 命名空间，一般用这个来区分环境，比如开发环境、生产环境等
+        namespace: dev
+        # 分组名称
+#        group: guang-dong
+        # 集群名称
+        cluster-name: guang-dong
+        # 当前服务的地址(猜测应该是返回给客户端用于调用的)
+#        server-addr: 127.0.0.1:8848
+
+ribbon:
+  eager‐load:
+    # 开启饥饿加载
+    enabled: false
+    # 需要饥饿加载的服务
+    clients: service-order
+
+# log
+logging:
+  config: classpath:logback-spring.xml
+  pattern:
+    console: '%d{HH:mm:ss.SSS} [%-5p] [%thread] %logger{15} - %msg %n'
+    file: '%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5p] [%thread] %logger{30} - %msg %n'
+  file:
+    path: logs/

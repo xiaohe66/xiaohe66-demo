@@ -20,6 +20,7 @@
         <module>xiaohe66-demo-other</module>
         <module>xiaohe66-demo-mq</module>
         <module>xiaohe66-demo-module</module>
+        <module>xiaohe66-demo-cloud2</module>
     </modules>
 
     <dependencyManagement>

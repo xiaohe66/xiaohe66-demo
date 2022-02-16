@@ -1,0 +1,15 @@
+debug: true
+#-------------------------------------------
+server:
+  tomcat:
+    # 配置Tomcat编码,默认为UTF-8
+    uri-encoding: UTF-8
+
+# log
+logging:
+  config: classpath:logback-spring.xml
+  pattern:
+    console: '%d{HH:mm:ss.SSS} [%-5p] [%thread] %logger{15} - %msg %n'
+    file: '%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5p] [%thread] %logger{30} - %msg %n'
+  file:
+    path: logs/
