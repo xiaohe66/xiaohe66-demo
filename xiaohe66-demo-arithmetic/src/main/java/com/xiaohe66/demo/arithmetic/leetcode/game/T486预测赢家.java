@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.arithmetic.leetcode.other;
+package com.xiaohe66.demo.arithmetic.leetcode.game;
 
 /**
  * <p>
