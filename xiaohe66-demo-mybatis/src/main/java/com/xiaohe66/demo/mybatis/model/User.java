@@ -1,26 +1,16 @@
 package com.xiaohe66.demo.mybatis.model;
 
+import lombok.Data;
+
 /**
  * @author xiaohe
- * @time 2019.05.30 14:39
+ * @since 2019.05.30 14:39
  */
+@Data
 public class User {
 
-    private Integer id;
-    private String userName;
+    private Long id;
+    private String name;
+    private String nameInt;
 
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    @Override
-    public String toString() {
-        return "{" + "\"id\":\"" + id + "\""
-                + ",\"userName\":\"" + userName + "\""
-                + "}";
-    }
 }

@@ -1,8 +1,10 @@
 package com.xiaohe66.demo.mybatis;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
+import com.xiaohe66.demo.mybatis.config.StringToIntegerTypeHandler;
 import com.xiaohe66.demo.mybatis.mapper.UserMapper;
 import com.xiaohe66.demo.mybatis.model.User;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.mapping.Environment;
 import org.apache.ibatis.session.Configuration;
 import org.apache.ibatis.session.SqlSession;
@@ -10,28 +12,21 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.apache.ibatis.transaction.TransactionFactory;
 import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;
+import org.apache.ibatis.type.TypeHandlerRegistry;
+import org.junit.Test;
 
 /**
  * @author xiaohe
- * @time 2019.05.30 14:33
+ * @since 2022.03.03 17:53
  */
-public class Test {
+@Slf4j
+public class MyBatisTest {
 
-    public static void main(String[] args) {
-        System.out.println(true && true || true);
-        System.out.println(true && false || true);
-        System.out.println(false && true || true);
-        System.out.println(false && false || true);
-        System.out.println("----------------------------");
-        System.out.println(true && true || false);
-        System.out.println(false && true || false);
-        System.out.println(true && false || false);
-        System.out.println(false && false || false);
-    }
+    @Test
+    public void test1() {
 
-    public void main1(String[] args) {
 
-        String dbUrl = "jdbc:mysql://localhost:3306/xh_demo_mybatis";
+        String dbUrl = "jdbc:mysql://localhost:3306/test";
         String dbUser = "root";
         String dbPwd = "root";
 
@@ -44,17 +39,22 @@ public class Test {
         Environment environment = new Environment("development", transactionFactory, dataSource);
         Configuration configuration = new Configuration(environment);
         configuration.addMapper(UserMapper.class);
+
+        // TypeHandlerRegistry typeHandlerRegistry = configuration.getTypeHandlerRegistry();
+        // typeHandlerRegistry.register(new StringToIntegerTypeHandler());
+
+        // configuration.setDefaultEnumTypeHandler(StringToIntegerTypeHandler.class);
+
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(configuration);
 
         try (SqlSession sqlSession = sqlSessionFactory.openSession()) {
             UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
-            System.out.println(userMapper.findAll());
+
+            for (User user : userMapper.findAll()) {
+
+                log.info("user : {}", user);
+            }
         }
 
-
-        User user = new User();
-
     }
-
-
 }
