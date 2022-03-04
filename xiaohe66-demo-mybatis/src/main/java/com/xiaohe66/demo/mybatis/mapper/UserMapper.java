@@ -11,6 +11,9 @@ import java.util.List;
  */
 public interface UserMapper {
 
+    @Select("select 'user'")
+    String selectOne();
+
     @Select("select id,`name`, `name` as nameInt from `user`")
     List<User> findAll();
 
