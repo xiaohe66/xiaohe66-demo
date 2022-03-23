@@ -4,6 +4,7 @@ import com.mysql.cj.jdbc.MysqlDataSource;
 import com.xiaohe66.demo.mybatis.config.StringToIntegerTypeHandler;
 import com.xiaohe66.demo.mybatis.mapper.UserMapper;
 import com.xiaohe66.demo.mybatis.model.User;
+import com.xiaohe66.demo.mybatis.plugin.UpdateLogPlugin;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.mapping.Environment;
 import org.apache.ibatis.session.Configuration;
@@ -25,7 +26,6 @@ public class MyBatisTest {
     @Test
     public void test1() {
 
-
         String dbUrl = "jdbc:mysql://localhost:3306/test";
         String dbUser = "root";
         String dbPwd = "root";
@@ -37,7 +37,9 @@ public class MyBatisTest {
 
         TransactionFactory transactionFactory = new JdbcTransactionFactory();
         Environment environment = new Environment("development", transactionFactory, dataSource);
+
         Configuration configuration = new Configuration(environment);
+        configuration.addInterceptor(new UpdateLogPlugin());
         configuration.addMapper(UserMapper.class);
 
         // TypeHandlerRegistry typeHandlerRegistry = configuration.getTypeHandlerRegistry();
@@ -50,10 +52,11 @@ public class MyBatisTest {
         try (SqlSession sqlSession = sqlSessionFactory.openSession()) {
             UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
 
-            for (User user : userMapper.findAll()) {
+            log.info(userMapper.selectOne());
 
-                log.info("user : {}", user);
-            }
+            log.info("-------------");
+            userMapper.update(1);
+            log.info("-------------");
         }
 
     }
