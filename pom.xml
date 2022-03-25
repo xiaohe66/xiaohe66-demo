@@ -13,13 +13,13 @@
         <module>xiaohe66-demo-se</module>
         <module>xiaohe66-demo-spring</module>
         <module>xiaohe66-demo-arithmetic</module>
-        <module>xiaohe66-demo-boot</module>
+        <!--<module>xiaohe66-demo-boot</module>-->
         <module>xiaohe66-demo-mybatis</module>
-        <module>xiaohe66-demo-cloud</module>
-        <module>xiaohe66-demo-zookeeper</module>
-        <module>xiaohe66-demo-other</module>
-        <module>xiaohe66-demo-mq</module>
-        <module>xiaohe66-demo-module</module>
+        <!--<module>xiaohe66-demo-cloud</module>-->
+        <!--<module>xiaohe66-demo-zookeeper</module>-->
+        <!--<module>xiaohe66-demo-other</module>-->
+        <!--<module>xiaohe66-demo-mq</module>-->
+        <!--<module>xiaohe66-demo-module</module>-->
         <module>xiaohe66-demo-cloud2</module>
     </modules>
 
