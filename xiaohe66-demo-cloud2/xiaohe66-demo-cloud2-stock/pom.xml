@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>xiaohe66-demo-cloud2-order</artifactId>
-    <version>1.0.0</version>
+    <artifactId>xiaohe66-demo-cloud2-stock</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -35,14 +34,8 @@
         </dependency>
 
         <dependency>
-            <groupId>com.xiaohe66</groupId>
-            <artifactId>xiaohe66-demo-cloud2-stock-feign</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <scope>provided</scope>
         </dependency>
 
     </dependencies>

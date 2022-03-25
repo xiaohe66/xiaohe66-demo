@@ -1,0 +1,32 @@
+debug: true
+#-------------------------------------------
+server:
+  tomcat:
+    # 配置Tomcat编码,默认为UTF-8
+    uri-encoding: UTF-8
+  port: 8061
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: service-product
+  cloud:
+    nacos:
+      discovery:
+        # 命名空间，一般用这个来区分环境，比如开发环境、生产环境等
+        namespace: dev
+        # 分组名称
+        #        group: guang-dong
+        # 集群名称，同一个集群内的机器可通信
+        cluster-name: guang-dong
+        server-addr: 127.0.0.1:8848
+
+# log
+logging:
+  config: classpath:logback-spring.xml
+  pattern:
+    console: '%d{HH:mm:ss.SSS} [%-5p] [%thread] %logger{15} - %msg %n'
+    file: '%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5p] [%thread] %logger{30} - %msg %n'
+  file:
+    path: logs/product/

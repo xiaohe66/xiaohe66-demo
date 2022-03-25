@@ -1,0 +1,63 @@
+debug: true
+#-------------------------------------------
+server:
+  tomcat:
+    # 配置Tomcat编码,默认为UTF-8
+    uri-encoding: UTF-8
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: service-gateway
+  cloud:
+    nacos:
+      discovery:
+        # 命名空间，一般用这个来区分环境，比如开发环境、生产环境等
+        namespace: dev
+        # 分组名称
+        #        group: guang-dong
+        # 集群名称，同一个集群内的机器可通信
+        cluster-name: guang-dong
+        server-addr: 127.0.0.1:8848
+    gateway:
+      discovery:
+        # 默认为false，设为true开启通过微服务创建路由的功能，即可以通过微服务名访问服务
+        # http://localhost:8888/mall-order/order/findOrderByUserId/1
+        enabled: false
+      # 是否开启网关
+      enabled: true
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - DELETE
+              - PUT
+              - OPTION
+      routes:
+        #路由ID，全局唯一，建议配合服务名
+        - id: order_route
+          #lb 整合负载均衡器ribbon,loadbalancer
+          uri: lb://service-order
+          predicates:
+            #Path路径匹配
+            - Path=/order/**
+        - id: product_route
+          #lb 整合负载均衡器ribbon,loadbalancer
+          uri: lb://service-product
+          predicates:
+            #Path路径匹配
+            - Path=/product/**
+
+# log
+logging:
+  config: classpath:logback-spring.xml
+  pattern:
+    console: '%d{HH:mm:ss.SSS} [%-5p] [%thread] %logger{15} - %msg %n'
+    file: '%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5p] [%thread] %logger{30} - %msg %n'
+  file:
+    path: logs/gateway/

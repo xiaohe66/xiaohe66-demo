@@ -13,6 +13,10 @@
         <module>xiaohe66-demo-cloud2-demo1</module>
         <module>xiaohe66-demo-cloud2-user</module>
         <module>xiaohe66-demo-cloud2-order</module>
+        <module>xiaohe66-demo-cloud2-stock</module>
+        <module>xiaohe66-demo-cloud2-stock-feign</module>
+        <module>xiaohe66-demo-cloud2-gateway</module>
+        <module>xiaohe66-demo-cloud2-product</module>
     </modules>
 
     <properties>
@@ -46,6 +50,18 @@
                 <version>2.2.5.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.xiaohe66</groupId>
+                <artifactId>xiaohe66-demo-cloud2-stock</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.xiaohe66</groupId>
+                <artifactId>xiaohe66-demo-cloud2-stock-feign</artifactId>
+                <version>1.0.0</version>
             </dependency>
 
         </dependencies>

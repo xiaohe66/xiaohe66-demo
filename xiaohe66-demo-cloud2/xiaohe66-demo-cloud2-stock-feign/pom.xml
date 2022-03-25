@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>xiaohe66-demo-cloud2-order</artifactId>
-    <version>1.0.0</version>
+    <artifactId>xiaohe66-demo-cloud2-stock-feign</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -24,19 +23,9 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!--<dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-        </dependency>-->
-
         <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.xiaohe66</groupId>
-            <artifactId>xiaohe66-demo-cloud2-stock-feign</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
         <dependency>
@@ -46,6 +35,5 @@
         </dependency>
 
     </dependencies>
-
 
 </project>
