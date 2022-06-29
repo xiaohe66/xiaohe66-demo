@@ -1,0 +1,3 @@
+
+# 外部实现需要提供这个文件，并且将实现的全类名写在这里（暂时不清楚内部类要怎么填）
+com.xiaohe66.demo.se.spi.MySpiInterfaceImpl
