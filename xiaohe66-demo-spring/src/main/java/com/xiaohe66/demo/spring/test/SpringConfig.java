@@ -18,11 +18,13 @@ public class SpringConfig {
 
             @Override
             public String query() {
+                System.out.println("execute query method");
                 return "origin";
             }
 
             @Override
             public String query2() {
+                System.out.println("execute query2 method");
                 return "origin-2";
             }
         };

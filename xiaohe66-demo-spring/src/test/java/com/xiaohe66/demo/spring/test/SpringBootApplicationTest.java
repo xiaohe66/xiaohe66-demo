@@ -73,10 +73,13 @@ class SpringBootApplicationTest {
 
         String correctValue = "mock value";
 
-        // mock
-        Mockito.when(springTestMapper.query()).thenReturn(correctValue);
+        // 在使用 @SpyBean 时。下面的方式虽然会改变返回值，但这种方式会执行目标方法。（打印了 execute query）
+        // Mockito.when(springTestMapper.query()).thenReturn(correctValue);
 
-        // NOTE ： 由于Mapper是一个接口，因此 MOCK 无法调用原本的实现
+        // 在使用 @SpyBean 时。应使用这种方式。注意 when 传的是一个Bean，而不是方法。测试的方法放在后面
+        Mockito.doReturn(correctValue).when(springTestMapper).query();
+
+        // NOTE ： 由于Mapper是一个接口，因此 MOCK 无法调用原本的实现。放开注释后可以执行可以看到报错信息
         // Mockito.when(springTestMapper.query()).thenCallRealMethod();
 
         String correctValue2 = "origin-2";
