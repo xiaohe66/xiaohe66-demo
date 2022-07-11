@@ -21,4 +21,11 @@ public class SpringTestService {
         return springTestMapper.query();
     }
 
+    public String query2() {
+
+        springTest2Service.sayHello();
+
+        return springTestMapper.query2();
+    }
+
 }

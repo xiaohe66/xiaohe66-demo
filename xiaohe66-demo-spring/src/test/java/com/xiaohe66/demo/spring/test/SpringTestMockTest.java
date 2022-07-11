@@ -1,14 +1,14 @@
 package com.xiaohe66.demo.spring.test;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import static org.junit.Assert.assertEquals;
-
-public class SpringTestMockTest {
+class SpringTestMockTest {
 
     @InjectMocks
     private SpringTestService springTestService;
@@ -22,8 +22,9 @@ public class SpringTestMockTest {
     @Mock
     private SpringTest2Service springTest2Service;
 
+    @DisplayName("测试1")
     @Test
-    public void test1() {
+    void test1() {
 
         String correctValue = "mock value";
 
@@ -34,6 +35,6 @@ public class SpringTestMockTest {
 
         String ret = springTestService.query();
 
-        assertEquals(correctValue, ret);
+        Assertions.assertEquals(correctValue, ret);
     }
 }

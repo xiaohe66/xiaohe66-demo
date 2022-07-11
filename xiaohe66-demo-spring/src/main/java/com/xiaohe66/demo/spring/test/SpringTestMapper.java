@@ -6,9 +6,8 @@ package com.xiaohe66.demo.spring.test;
  */
 public interface SpringTestMapper {
 
-    /**
-     * 这是一个接口，模拟 MyBatis 接口
-     */
     String query();
+
+    String query2();
 
 }
