@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.se.thread.create;
+package com.xiaohe66.demo.se.concurrent.thread.create;
 
 /**
  * 使用实现接口的方式创建线程

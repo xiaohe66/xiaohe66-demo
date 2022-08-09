@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.se.common.string;
+package com.xiaohe66.demo.se.string;
 
 /**
  * String类的常用方法盘点

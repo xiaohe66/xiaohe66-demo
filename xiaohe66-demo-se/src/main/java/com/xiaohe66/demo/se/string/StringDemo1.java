@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.se.common.string;
+package com.xiaohe66.demo.se.string;
 
 /**
  * 创建String对象的方式和区别

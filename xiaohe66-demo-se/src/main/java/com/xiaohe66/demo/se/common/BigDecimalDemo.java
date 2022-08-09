@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.se.math;
+package com.xiaohe66.demo.se.common;
 
 import java.math.BigDecimal;
 

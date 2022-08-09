@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.se.thread.create;
+package com.xiaohe66.demo.se.concurrent.thread.create;
 
 /**
  * 使用继承的方式实现线程

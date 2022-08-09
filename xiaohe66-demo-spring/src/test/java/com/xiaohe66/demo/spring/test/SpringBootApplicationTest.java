@@ -63,7 +63,7 @@ class SpringBootApplicationTest {
     void test0() {
         Map<String, SpringTestMapper> beansOfType = applicationContext.getBeansOfType(SpringTestMapper.class);
         for (Map.Entry<String, SpringTestMapper> entry : beansOfType.entrySet()) {
-            log.info("{} : {}", entry.getKey(), entry.getValue());
+            log.info("{} : {}", entry.getKey(), entry.getValue().getClass().getName());
         }
     }
 

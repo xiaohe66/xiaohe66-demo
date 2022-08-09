@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.se.thread.common;
+package com.xiaohe66.demo.se.concurrent.thread.common;
 
 /**
  * @author xh

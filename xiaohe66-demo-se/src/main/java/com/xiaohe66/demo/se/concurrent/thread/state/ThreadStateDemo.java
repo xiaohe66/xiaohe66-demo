@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.se.thread.state;
+package com.xiaohe66.demo.se.concurrent.thread.state;
 
 /**
  * 线程的状态

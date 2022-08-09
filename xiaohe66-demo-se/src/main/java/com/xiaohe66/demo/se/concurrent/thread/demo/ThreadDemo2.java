@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.se.thread.demo;
+package com.xiaohe66.demo.se.concurrent.thread.demo;
 
 
 /**

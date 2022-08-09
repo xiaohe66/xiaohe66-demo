@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.se.common.string;
+package com.xiaohe66.demo.se.string;
 
 /**
  * StringBuffer和String有本质的区别：

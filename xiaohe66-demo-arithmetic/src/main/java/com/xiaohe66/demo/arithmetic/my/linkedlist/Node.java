@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.se.arithmetic.linkedlist;
+package com.xiaohe66.demo.arithmetic.my.linkedlist;
 
 /**
  * @author xiaohe

@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.se.thread.sync;
+package com.xiaohe66.demo.se.concurrent.thread.sync;
 
 /**
  * 引出多线程同步问题

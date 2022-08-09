@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.se.common.date;
+package com.xiaohe66.demo.se.date;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
