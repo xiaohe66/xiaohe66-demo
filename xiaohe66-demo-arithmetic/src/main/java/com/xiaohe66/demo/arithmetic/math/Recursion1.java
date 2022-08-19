@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.interview.arithmetic;
+package com.xiaohe66.demo.arithmetic.math;
 
 /**
  * 递归求知

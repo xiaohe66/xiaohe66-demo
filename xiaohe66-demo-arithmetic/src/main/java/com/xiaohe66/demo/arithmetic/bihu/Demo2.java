@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.bihu;
+package com.xiaohe66.demo.arithmetic.bihu;
 
 /**
  * 打印1, 0, 2, 4 这4个数字能组成的所有不重复的数

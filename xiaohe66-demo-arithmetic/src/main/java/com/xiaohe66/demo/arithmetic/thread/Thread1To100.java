@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.interview.thread;
+package com.xiaohe66.demo.arithmetic.thread;
 
 /**
  *

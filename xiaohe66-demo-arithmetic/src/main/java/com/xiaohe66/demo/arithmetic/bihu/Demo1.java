@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.bihu;
+package com.xiaohe66.demo.arithmetic.bihu;
 
 /**
  * 打印1到1000之间包含数字9的数 (比如9, 19, 199, 920 都算)

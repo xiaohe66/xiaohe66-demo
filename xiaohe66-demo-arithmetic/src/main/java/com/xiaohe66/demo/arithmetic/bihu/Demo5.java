@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.bihu;
+package com.xiaohe66.demo.arithmetic.bihu;
 
 /**
  * 打印一个菱形, 最外一层是*, 其他位置都是#

@@ -27,7 +27,7 @@ public class DividedTwo {
 
     public static void main(String[] args) {
 
-        long n = 50L * 10000 * 10000;
+        long n = 100L * 10000 * 10000;
         int divisor = 8;
 
 //        for (int i = 0; i < n; i++) {
@@ -47,6 +47,7 @@ public class DividedTwo {
         long gap1 = time2 - time1;
         long gap2 = time3 - time2;
 
+        // NOTE : 这个结果是错的，如果更换 test2 和 test3 的测试顺序，会产生相反的结果。
         System.out.println(String.format("取余花费:%s,按位花费:%s,按位是否更省时间：%s", gap1, gap2, gap1 > gap2));
 
 

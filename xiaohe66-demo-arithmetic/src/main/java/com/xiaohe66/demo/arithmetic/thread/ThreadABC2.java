@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.interview.thread;
+package com.xiaohe66.demo.arithmetic.thread;
 
 /**
  *
@@ -17,12 +17,12 @@ package com.xiaohe66.demo.interview.thread;
  * @author xiaohe
  * @date 2019.05.08 13:37
  */
-public class ThreadABC extends Thread{
+public class ThreadABC2 extends Thread{
 
     private final String nextName;
     private final Lock lock;
 
-    private ThreadABC(String name, String nextName, Lock lock) {
+    private ThreadABC2(String name, String nextName, Lock lock) {
         super(name);
         this.nextName = nextName;
         this.lock = lock;
@@ -70,7 +70,7 @@ public class ThreadABC extends Thread{
 
             String nextName = i + 1 == arr.length ? arr[0] : arr[i+1];
 
-            new ThreadABC(arr[i],nextName,lock).start();
+            new ThreadABC2(arr[i],nextName,lock).start();
         }
 
     }

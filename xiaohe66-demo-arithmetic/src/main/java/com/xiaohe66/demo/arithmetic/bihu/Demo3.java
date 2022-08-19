@@ -1,4 +1,4 @@
-package com.xiaohe66.demo.bihu;
+package com.xiaohe66.demo.arithmetic.bihu;
 
 import java.util.Scanner;
 
