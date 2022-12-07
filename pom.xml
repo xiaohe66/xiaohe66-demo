@@ -21,6 +21,7 @@
         <!--<module>xiaohe66-demo-mq</module>-->
         <!--<module>xiaohe66-demo-module</module>-->
         <module>xiaohe66-demo-cloud2</module>
+        <module>xiaohe66-demo-netty</module>
     </modules>
 
     <dependencyManagement>
@@ -71,6 +72,13 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>8.0.26</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>2.1.214</version>
+                <scope>test</scope>
             </dependency>
 
             <dependency>
